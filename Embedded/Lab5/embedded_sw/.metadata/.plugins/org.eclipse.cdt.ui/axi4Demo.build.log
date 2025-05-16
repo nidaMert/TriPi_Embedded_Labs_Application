@@ -1,0 +1,9 @@
+21:53:51 **** Incremental Build of configuration Default for project axi4Demo ****
+make all 
+CC src/main.c
+LD axi4Demo
+Memory region         Used Size  Region Size  %age Used
+             ram:        2720 B         4 KB     66.41%
+
+21:53:52 Build Finished. 0 errors, 0 warnings. (took 354ms)
+

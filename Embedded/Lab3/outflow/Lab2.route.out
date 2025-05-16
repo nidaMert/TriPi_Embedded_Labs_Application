@@ -1,0 +1,193 @@
+           
+           Efinix FPGA Placement and Routing.
+           Version: 2024.1.163 
+           Compiled: Jun 25 2024.
+           
+           Copyright (C) 2013 - 2024 Efinix, Inc. All rights reserved.
+
+           
+           The Tool Is Based on VPR of University of Toronto,
+           a free open source code under MIT license.
+           
+           
+INFO     : Running Placement and Routing for Family "Trion", Device "T20Q144" ...
+           
+           ***** Beginning stage routing graph generation ... *****
+INFO     : Read ipin pattern from C:/Efinity/2024.1/arch/./ipin_oph.xml
+INFO     : Finished parsing ipin pattern file 'C:/Efinity/2024.1/arch/./ipin_oph.xdb'.
+INFO     : Finished parsing switch_block file 'C:/Efinity/2024.1/arch/.\sb_connectivity_subset.xdb'.
+INFO     : BuildGraph process took 5.68702 seconds.
+INFO     : 	BuildGraph process took 5.60938 seconds (approximately) in total CPU time.
+INFO     : BuildGraph process virtual memory usage: begin = 129.24 MB, end = 503.02 MB, delta = 373.78 MB
+INFO     : 	BuildGraph process peak virtual memory usage = 507.668 MB
+INFO     : BuildGraph process resident set memory usage: begin = 135.696 MB, end = 501.088 MB, delta = 365.392 MB
+INFO     : 	BuildGraph process peak resident set memory usage = 505.496 MB
+INFO     : check rr_graph process took 0.106563 seconds.
+INFO     : 	check rr_graph process took 0.109375 seconds (approximately) in total CPU time.
+INFO     : check rr_graph process virtual memory usage: begin = 541.028 MB, end = 541.028 MB, delta = 0 MB
+INFO     : 	check rr_graph process peak virtual memory usage = 551.452 MB
+INFO     : check rr_graph process resident set memory usage: begin = 539.04 MB, end = 539.092 MB, delta = 0.052 MB
+INFO     : 	check rr_graph process peak resident set memory usage = 549.448 MB
+INFO     : Generated 1176848 RR nodes and 4445827 RR edges
+INFO     : This design has 0 global control net(s). See C:/Efinity/Embedded/Lab3/outflow\Lab2.route.rpt for details.
+INFO     : Routing graph took 5.89811 seconds.
+INFO     : 	Routing graph took 5.78125 seconds (approximately) in total CPU time.
+INFO     : Routing graph virtual memory usage: begin = 128.432 MB, end = 501.864 MB, delta = 373.432 MB
+INFO     : 	Routing graph peak virtual memory usage = 551.452 MB
+INFO     : Routing graph resident set memory usage: begin = 134.716 MB, end = 500.064 MB, delta = 365.348 MB
+INFO     : 	Routing graph peak resident set memory usage = 549.448 MB
+           ***** Ending stage routing graph generation *****
+           
+           ***** Beginning stage routing ... *****
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:58] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:58] set_output_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:58] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:59] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:59] set_output_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:59] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:60] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:60] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:60] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:61] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:61] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:61] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst1_RESET'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:62] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:62] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:62] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst1_RESET'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:63] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:63] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:63] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:64] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:64] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:64] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:65] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:65] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:65] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst1_UPDATE'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:66] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:66] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:66] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst1_UPDATE'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:67] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:67] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:67] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:68] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:68] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:68] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:69] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:69] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:69] Unable to run 'set_input_delay' constraint due to warnings found
+INFO     : SDC file 'C:/Efinity/Embedded/Lab3/Lab2.pt.sdc' parsed successfully.
+INFO     : 1 clocks (including virtual clocks), 2 inputs and 6 outputs were constrained.
+INFO     :  ---------      -------     --------------      -------------
+INFO     :  Iteration      Overuse     Crit Path (ns)      Calc Time (s)
+INFO     :  ---------      -------     --------------      -------------
+INFO     :          1        17218              15.59               2.83
+INFO     :          2         1930              19.45               2.63
+INFO     :          3          428              19.29               2.24
+INFO     :          4            8              19.29               1.33
+INFO     :          5            1              19.29              0.576
+INFO     :          6            0              19.29               1.59
+           
+INFO     : Successfully routed netlist after 6 routing iterations and 41375762 heapops
+INFO     : Completed net delay value cross check successfully.
+           ***** Beginning stage routing check ... *****
+           ***** Ending stage routing check *****
+           
+INFO     : Serial number (magic cookie) for the routing is: 446406580
+INFO     : Netlist fully routed.
+INFO     : Successfully created FPGA route file 'C:/Efinity/Embedded/Lab3/outflow/Lab2.route'
+INFO     : Routing took 12.462 seconds.
+INFO     : 	Routing took 12.2031 seconds (approximately) in total CPU time.
+INFO     : Routing virtual memory usage: begin = 501.864 MB, end = 516.596 MB, delta = 14.732 MB
+INFO     : 	Routing peak virtual memory usage = 679.548 MB
+INFO     : Routing resident set memory usage: begin = 500.064 MB, end = 511.032 MB, delta = 10.968 MB
+INFO     : 	Routing peak resident set memory usage = 657.604 MB
+           ***** Ending stage routing *****
+           
+           ***** Beginning stage final timing analysis ... *****
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:58] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:58] set_output_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:58] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:59] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:59] set_output_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:59] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:60] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:60] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:60] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:61] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:61] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:61] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst1_RESET'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:62] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:62] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:62] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst1_RESET'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:63] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:63] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:63] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:64] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:64] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:64] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:65] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:65] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:65] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst1_UPDATE'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:66] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:66] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:66] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst1_UPDATE'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:67] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:67] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:67] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:68] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:68] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:68] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:69] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:69] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab3/Lab2.pt.sdc:69] Unable to run 'set_input_delay' constraint due to warnings found
+INFO     : SDC file 'C:/Efinity/Embedded/Lab3/Lab2.pt.sdc' parsed successfully.
+INFO     : 1 clocks (including virtual clocks), 2 inputs and 6 outputs were constrained.
+Maximum possible analyzed clocks frequency
+ Clock Name  Period (ns)  Frequency (MHz)     Edge
+io_systemClk    19.409        51.522         (R-R)
+
+Geomean max period: 19.409
+
+Setup (Max) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+  io_systemClk     io_systemClk        50.000           30.591           (R-R)
+
+Hold (Min) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+  io_systemClk     io_systemClk        0.000            0.119            (R-R)
+
+INFO     : Write Timing Report to "C:/Efinity/Embedded/Lab3/outflow\Lab2.timing.rpt" ...
+INFO     : final timing analysis took 0.715732 seconds.
+INFO     : 	final timing analysis took 0.703125 seconds (approximately) in total CPU time.
+INFO     : final timing analysis virtual memory usage: begin = 522.888 MB, end = 545.156 MB, delta = 22.268 MB
+INFO     : 	final timing analysis peak virtual memory usage = 679.548 MB
+INFO     : final timing analysis resident set memory usage: begin = 516.34 MB, end = 539.088 MB, delta = 22.748 MB
+INFO     : 	final timing analysis peak resident set memory usage = 657.604 MB
+           ***** Ending stage final timing analysis *****
+           
+           ***** Beginning stage bitstream generation ... *****
+INFO     : Reading core interface constraints file "C:/Efinity/Embedded/Lab3/outflow/Lab2.interface.csv"
+INFO     : Successfully read core interface constraints file "C:/Efinity/Embedded/Lab3/outflow/Lab2.interface.csv"
+INFO     : Finished writing bitstream file C:/Efinity/Embedded/Lab3/work_pnr\Lab2.lbf.
+INFO     : Bitstream generation took 0.669632 seconds.
+INFO     : 	Bitstream generation took 0.640625 seconds (approximately) in total CPU time.
+INFO     : Bitstream generation virtual memory usage: begin = 545.156 MB, end = 574.192 MB, delta = 29.036 MB
+INFO     : 	Bitstream generation peak virtual memory usage = 679.548 MB
+INFO     : Bitstream generation resident set memory usage: begin = 539.116 MB, end = 568.764 MB, delta = 29.648 MB
+INFO     : 	Bitstream generation peak resident set memory usage = 657.604 MB
+           ***** Ending stage bitstream generation *****
+           
+INFO     : The entire flow of EFX_PNR took 46.1372 seconds.
+INFO     : 	The entire flow of EFX_PNR took 53.2812 seconds (approximately) in total CPU time.
+INFO     : The entire flow of EFX_PNR virtual memory usage: begin = 4.516 MB, end = 79.324 MB, delta = 74.808 MB
+INFO     : 	The entire flow of EFX_PNR peak virtual memory usage = 679.548 MB
+INFO     : The entire flow of EFX_PNR resident set memory usage: begin = 13.028 MB, end = 88.788 MB, delta = 75.76 MB
+INFO     : 	The entire flow of EFX_PNR peak resident set memory usage = 657.604 MB

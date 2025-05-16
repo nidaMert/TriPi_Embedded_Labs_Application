@@ -1,0 +1,403 @@
+           
+           Efinix FPGA Placement and Routing.
+           Version: 2024.1.163 
+           Compiled: Jun 25 2024.
+           
+           Copyright (C) 2013 - 2024 Efinix, Inc. All rights reserved.
+
+           
+           The Tool Is Based on VPR of University of Toronto,
+           a free open source code under MIT license.
+           
+           
+INFO     : Running Placement and Routing for Family "Trion", Device "T20Q144" ...
+           
+           ***** Beginning stage netlist pre-processing ... *****
+INFO     : Successfully Read in Verific binary Netlist dump file "C:/Efinity/Embedded/Lab7/outflow/Lab5.vdb".
+INFO     : ***** Beginning VDB Netlist Checker ... *****
+WARNING  : C:\Efinity\Embedded\Lab7\top.v(29): Input/inout port jtag_inst1_UPDATE is unconnected and will be removed. [VDB-8003]
+WARNING  : C:\Efinity\Embedded\Lab7\top.v(30): Input/inout port jtag_inst1_RESET is unconnected and will be removed. [VDB-8003]
+INFO     : Found 2 warnings in the post-synthesis netlist.
+INFO     : VDB Netlist Checker took 0.104931 seconds.
+INFO     : 	VDB Netlist Checker took 0.109375 seconds (approximately) in total CPU time.
+INFO     : VDB Netlist Checker virtual memory usage: begin = 30.28 MB, end = 30.3 MB, delta = 0.02 MB
+INFO     : 	VDB Netlist Checker peak virtual memory usage = 51.74 MB
+INFO     : VDB Netlist Checker resident set memory usage: begin = 41.976 MB, end = 42.288 MB, delta = 0.312 MB
+INFO     : 	VDB Netlist Checker peak resident set memory usage = 63.252 MB
+INFO     : ***** Ending VDB Netlist Checker ... *****
+INFO     : Reading core interface constraints file "C:/Efinity/Embedded/Lab7/outflow/Lab5.interface.csv"
+INFO     : Successfully read core interface constraints file "C:/Efinity/Embedded/Lab7/outflow/Lab5.interface.csv"
+INFO     : Found 0 constant generator nets.
+INFO     : Pass 0: Swept away 0 nets with no fanout.
+INFO     : logical_block #8(jtag_inst1_UPDATE) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #9(jtag_inst1_RESET) has no fanout.
+INFO     : Removing input.
+INFO     : Pass 0: Swept away 2 blocks with no fanout.
+INFO     : Pass 1: Swept away 0 nets with no fanout.
+INFO     : Pass 1: Swept away 0 blocks with no fanout.
+INFO     : Swept away 0 nets and 2 blocks in total.
+INFO     : Removed 0 LUT buffers
+INFO     : Sweept away 2 nodes
+INFO     : Successfully created VPR logical netlist from Verific binary DataBase file "C:/Efinity/Embedded/Lab7/outflow/Lab5.vdb".
+INFO     : Netlist pre-processing took 0.281592 seconds.
+INFO     : 	Netlist pre-processing took 0.25 seconds (approximately) in total CPU time.
+INFO     : Netlist pre-processing virtual memory usage: begin = 12.556 MB, end = 46.092 MB, delta = 33.536 MB
+INFO     : 	Netlist pre-processing peak virtual memory usage = 51.74 MB
+INFO     : Netlist pre-processing resident set memory usage: begin = 24.352 MB, end = 57.82 MB, delta = 33.468 MB
+INFO     : 	Netlist pre-processing peak resident set memory usage = 63.252 MB
+           ***** Ending stage netlist pre-processing *****
+           
+           ***** Beginning stage pre-packing ... *****
+           ***** Ending stage pre-packing *****
+           
+           ***** Beginning stage packing ... *****
+INFO     : Generate proto netlist for file "C:/Efinity/Embedded/Lab7/work_pnr\Lab5.net_proto" took 0.018 seconds
+INFO     : Creating IO constraints file 'C:/Efinity/Embedded/Lab7/work_pnr\Lab5.io_place'
+INFO     : Packing took 0.0816989 seconds.
+INFO     : 	Packing took 0.0625 seconds (approximately) in total CPU time.
+INFO     : Packing virtual memory usage: begin = 35.824 MB, end = 43.124 MB, delta = 7.3 MB
+INFO     : 	Packing peak virtual memory usage = 51.74 MB
+INFO     : Packing resident set memory usage: begin = 46.824 MB, end = 54.184 MB, delta = 7.36 MB
+INFO     : 	Packing peak resident set memory usage = 63.252 MB
+           ***** Ending stage packing *****
+           
+           ***** Beginning stage packed netlist loading ... *****
+INFO     : Read proto netlist file C:/Efinity/Embedded/Lab7/work_pnr\Lab5.net_proto
+INFO     : Read proto netlist for file "C:/Efinity/Embedded/Lab7/work_pnr\Lab5.net_proto" took 0.002 seconds
+INFO     : Setup net and block data structure took 0.412 seconds
+INFO     : Packed netlist loading took 2.87568 seconds.
+INFO     : 	Packed netlist loading took 3.89062 seconds (approximately) in total CPU time.
+INFO     : Packed netlist loading virtual memory usage: begin = 43.124 MB, end = 134.116 MB, delta = 90.992 MB
+INFO     : 	Packed netlist loading peak virtual memory usage = 175.304 MB
+INFO     : Packed netlist loading resident set memory usage: begin = 54.196 MB, end = 143.344 MB, delta = 89.148 MB
+INFO     : 	Packed netlist loading peak resident set memory usage = 182.4 MB
+           ***** Ending stage packed netlist loading *****
+           
+           ***** Beginning stage pre-placement ... *****
+           
+           ***** Ending stage pre-placement *****
+           
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:54] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:54] set_output_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:54] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:55] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:55] set_output_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:55] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:56] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:56] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:56] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:57] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:57] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:57] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst1_RESET'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:58] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:58] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:58] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst1_RESET'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:59] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:59] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:59] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:60] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:60] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:60] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:61] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:61] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:61] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst1_UPDATE'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:62] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:62] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:62] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst1_UPDATE'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:63] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:63] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:63] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:64] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:64] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:64] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:65] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:65] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:65] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:73] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:73] set_output_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:73] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:74] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:74] set_output_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:74] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:75] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:75] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:75] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:76] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:76] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:76] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:77] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:77] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:77] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:78] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:78] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:78] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:79] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:79] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:79] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:80] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:80] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:80] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:81] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:81] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:81] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:82] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:82] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:82] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:83] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:83] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:83] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:84] No clocks matched 'jtag_inst2_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:84] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab7/Lab5.pt.sdc:84] Unable to run 'set_input_delay' constraint due to warnings found
+INFO     : SDC file 'C:/Efinity/Embedded/Lab7/Lab5.pt.sdc' parsed successfully.
+INFO     : 1 clocks (including virtual clocks), 2 inputs and 6 outputs were constrained.
+           ***** Beginning stage initial placement ... *****
+INFO     : Reading core interface constraints file "C:/Efinity/Embedded/Lab7/outflow/Lab5.interface.csv"
+INFO     : Successfully read core interface constraints file "C:/Efinity/Embedded/Lab7/outflow/Lab5.interface.csv"
+INFO     : Writing IO placement constraints to "C:/Efinity/Embedded/Lab7/outflow\Lab5.interface.io"
+INFO     : Reading placement constraints from 'C:/Efinity/Embedded/Lab7/outflow\Lab5.interface.io'.
+INFO     : Reading placement constraints from 'C:/Efinity/Embedded/Lab7/work_pnr\Lab5.io_place'.
+WARNING  : system_spi_0_io_data_2_writeEnable has no assigned placement; it will be placed randomly.
+WARNING  : system_spi_0_io_data_2_read has no assigned placement; it will be placed randomly.
+WARNING  : system_spi_0_io_data_2_write has no assigned placement; it will be placed randomly.
+WARNING  : system_spi_0_io_data_3_writeEnable has no assigned placement; it will be placed randomly.
+WARNING  : system_spi_0_io_data_3_read has no assigned placement; it will be placed randomly.
+WARNING  : system_spi_0_io_data_3_write has no assigned placement; it will be placed randomly.
+WARNING  : result[3] has no assigned placement; it will be placed randomly.
+WARNING  : result[2] has no assigned placement; it will be placed randomly.
+WARNING  : result[1] has no assigned placement; it will be placed randomly.
+WARNING  : result[0] has no assigned placement; it will be placed randomly.
+WARNING  : ain[3] has no assigned placement; it will be placed randomly.
+WARNING  : ain[2] has no assigned placement; it will be placed randomly.
+WARNING  : ain[1] has no assigned placement; it will be placed randomly.
+WARNING  : ain[0] has no assigned placement; it will be placed randomly.
+WARNING  : bin[3] has no assigned placement; it will be placed randomly.
+WARNING  : bin[2] has no assigned placement; it will be placed randomly.
+WARNING  : bin[1] has no assigned placement; it will be placed randomly.
+WARNING  : bin[0] has no assigned placement; it will be placed randomly.
+WARNING  : select has no assigned placement; it will be placed randomly.
+INFO     : 19 IOs will have random placement.
+WARNING  : Clock driver jtag_inst1_TCK should use the dedicated clock pad.
+WARNING  : Clock driver jtag_inst2_TCK should use the dedicated clock pad.
+INFO     : The driver, jtag_inst2_RESET, of control net, jtag_inst2_RESET, should be placed at a dedicated control pad location.
+           ***** Ending stage initial placement *****
+           
+           ***** Beginning stage placement ... *****
+INFO     : Found 41 synchronizers as follows: 
+INFO     : 	Synchronizer 0: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[31]~FF
+INFO     : 	Synchronizer 1: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[30]~FF
+INFO     : 	Synchronizer 2: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[29]~FF
+INFO     : 	Synchronizer 3: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[28]~FF
+INFO     : 	Synchronizer 4: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[27]~FF
+INFO     : 	Synchronizer 5: 
+INFO     :  u_soc/u_EfxSapphireSoc/bufferCC_8/buffers_0~FF
+INFO     :  u_soc/u_EfxSapphireSoc/bufferCC_8_io_dataOut~FF
+INFO     : 	Synchronizer 6: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[26]~FF
+INFO     : 	Synchronizer 7: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[25]~FF
+INFO     : 	Synchronizer 8: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[24]~FF
+INFO     : 	Synchronizer 9: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[23]~FF
+INFO     : 	Synchronizer 10: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[22]~FF
+INFO     : 	Synchronizer 11: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[21]~FF
+INFO     : 	Synchronizer 12: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[20]~FF
+INFO     : 	Synchronizer 13: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[19]~FF
+INFO     : 	Synchronizer 14: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[18]~FF
+INFO     : 	Synchronizer 15: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[1]~FF
+INFO     : 	Synchronizer 16: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_valid~FF
+INFO     : 	Synchronizer 17: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge_io_remote_cmd_payload_last~FF
+INFO     : 	Synchronizer 18: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[15]~FF
+INFO     : 	Synchronizer 19: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge_io_remote_cmd_payload_fragment[0]~FF
+INFO     : 	Synchronizer 20: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[14]~FF
+INFO     : 	Synchronizer 21: 
+INFO     :  u_soc/u_EfxSapphireSoc/bufferCC_6/buffers_0~FF
+INFO     :  u_soc/u_EfxSapphireSoc/bufferCC_6_io_dataOut~FF
+INFO     : 	Synchronizer 22: 
+INFO     :  u_soc/u_EfxSapphireSoc/bufferCC_7/buffers_0~FF
+INFO     :  u_soc/u_EfxSapphireSoc/bufferCC_7_io_dataOut~FF
+INFO     : 	Synchronizer 23: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_error~FF
+INFO     : 	Synchronizer 24: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[0]~FF
+INFO     : 	Synchronizer 25: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/flowCCByToggle_1/inputArea_target_buffercc/buffers_0~FF
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/flowCCByToggle_1/inputArea_target_buffercc_io_dataOut~FF
+INFO     : 	Synchronizer 26: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[2]~FF
+INFO     : 	Synchronizer 27: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[3]~FF
+INFO     : 	Synchronizer 28: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[4]~FF
+INFO     : 	Synchronizer 29: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[5]~FF
+INFO     : 	Synchronizer 30: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[6]~FF
+INFO     : 	Synchronizer 31: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[7]~FF
+INFO     : 	Synchronizer 32: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[8]~FF
+INFO     : 	Synchronizer 33: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1/rx/io_rxd_buffercc/buffers_0~FF
+INFO     :  u_soc/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1/rx/io_rxd_buffercc_io_dataOut~FF
+INFO     : 	Synchronizer 34: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[9]~FF
+INFO     : 	Synchronizer 35: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[10]~FF
+INFO     : 	Synchronizer 36: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[11]~FF
+INFO     : 	Synchronizer 37: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[12]~FF
+INFO     : 	Synchronizer 38: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[13]~FF
+INFO     : 	Synchronizer 39: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[16]~FF
+INFO     : 	Synchronizer 40: 
+INFO     :  u_soc/u_EfxSapphireSoc/system_hardJtag_debug_logic_jtagBridge/system_rsp_payload_data[17]~FF
+INFO     : Create C:/Efinity/Embedded/Lab7/outflow\Lab5_after_qp.qdelay
+INFO     : QPLACER STATIC DB USAGE DISABLED
+INFO     : Starting Global Placer with 4 threads ...
+            ----------     -------  --------------     -------
+             Iteration       WHPWL Worst Slack (ps) Convergence
+            ----------     -------  --------------     -------
+INFO     :           1    16735372           44167         2.0%
+INFO     :           2    15220975           43980         3.1%
+INFO     :           3    11145984           43896         4.3%
+INFO     :           4     9021324           43300         5.7%
+INFO     :           5     3289252           41904         9.0%
+INFO     :           6     2024595           40662        17.5%
+INFO     :           7      854560           39861        26.0%
+INFO     :           8      546159           38715        40.8%
+INFO     :           9      388729           38784        47.5%
+INFO     :          10      340078           37985        51.2%
+INFO     :          11      289965           38359        54.8%
+INFO     :          12      303029           38561        59.5%
+INFO     :          13      277717           38616        59.5%
+INFO     :          14      294130           39078        62.2%
+INFO     :          15      266668           38488        62.2%
+INFO     :          16      279264           38995        65.3%
+INFO     :          17      261026           38888        65.3%
+INFO     :          18      275549           38126        67.1%
+INFO     :          19      256504           38094        67.1%
+INFO     :          20      267220           38692        69.6%
+INFO     :          21      247462           37534        69.6%
+INFO     :          22      264914           38341        71.1%
+INFO     :          23      244594           38586        71.1%
+INFO     :          24      258132           38665        73.6%
+INFO     :          25      240640           38059        73.6%
+INFO     :          26      253873           37916        74.7%
+INFO     :          27      238040           37980        74.7%
+INFO     :          28      246899           37772        76.2%
+INFO     :          29      236555           36922        76.2%
+INFO     :          30      245522           37135        77.5%
+INFO     :          31      233376           36920        77.5%
+INFO     :          32      243615           37445        78.0%
+INFO     :          33      230701           37772        78.0%
+INFO     :          34      240604           37998        79.1%
+INFO     :          35      229750           37975        79.1%
+INFO     :          36      238375           37731        79.9%
+INFO     :          37      230386           37817        79.9%
+INFO     :          38      240017           36882        79.9%
+INFO     :          39      226629           37649        79.9%
+INFO     :          40      233546           37795        81.6%
+INFO     :          41      232587           37538        81.6%
+INFO     :          42      237124           38396        82.3%
+INFO     :          43      226333           37638        82.3%
+INFO     :          44      230319           37889        83.9%
+INFO     :          45      231002           37859        83.9%
+INFO     :          46      233328           37630        84.5%
+INFO     :          47      224644           37820        84.5%
+INFO     :          48      226145           37609        86.6%
+INFO     :          49      228908           37741        87.4%
+INFO     :          50      224761           37780        87.4%
+INFO     :          51      226814           38001        89.2%
+INFO     :          52      228389           37967        89.2%
+INFO     :          53      228316           37819        89.2%
+INFO     :          54      228469           37777        89.8%
+INFO     :          55      227617           38080        90.1%
+INFO     :          56      228138           37192        91.4%
+INFO     :          57      228214           37833        92.0%
+INFO     :          58      229595           37777        93.0%
+INFO     :          59      230479           37069        93.7%
+INFO     :          60      223508           36671        94.3%
+INFO     :          61      224740           37067        96.3%
+INFO     :          62      226408           37644        97.8%
+INFO     :          63      227249           37701        98.3%
+INFO     :          64      227581           37338        98.6%
+INFO     :          65      228690           37476        98.8%
+INFO     :          66      229425           37429        99.3%
+INFO     : Starting Annealer
+            ----------     -------  --------------     -------
+             Iteration       WHPWL  Delay Max (ps)     R Limit
+            ----------     -------  --------------     -------
+INFO     :           0      223508           13812        30.0
+INFO     :           1      194364           16823        29.7
+INFO     :           2      162713           15294        30.0
+INFO     :           3      150826           16591        30.0
+INFO     :           4      141753           14180        30.0
+INFO     :           5      133253           15003        29.8
+INFO     :           6      127303           15828        29.8
+INFO     :           7      122173           14314        29.4
+INFO     :           8      119134           15566        29.1
+INFO     :           9      116675           15624        28.4
+INFO     :          10      114868           15172        27.7
+INFO     :          11      113115           15172        26.6
+INFO     :          12      111153           14568        25.7
+INFO     :          13      110163           14376        24.6
+INFO     :          14      108972           16154        23.6
+INFO     :          15      107828           15759        22.5
+INFO     :          16      106684           15663        21.5
+INFO     :          17      105095           15340        20.3
+INFO     :          18      104073           15687        19.2
+INFO     :          19      103091           14712        18.1
+INFO     :          20      102611           16417        17.0
+INFO     :          21      101657           15580        15.9
+INFO     :          22      101090           15767        14.9
+INFO     :          23      100529           15324        13.9
+INFO     :          24      100055           15811        12.9
+INFO     :          25       99283           14253        12.0
+INFO     :          26       98710           14250        11.2
+INFO     :          27       98294           15135        10.4
+INFO     :          28       97877           15340         9.6
+INFO     :          29       97507           15323         8.9
+INFO     :          30       97196           15454         8.2
+INFO     :          31       96576           15341         7.5
+INFO     :          32       96106           15163         6.7
+INFO     : Generate C:/Efinity/Embedded/Lab7/outflow\Lab5_after_qp.qdelay
+INFO     : Placement successful: 6904 cells are placed
+INFO     : Peak congestion smeared over 1/4 of the chip is 0.359793 at 0,9
+INFO     : Congestion-weighted HPWL per net: 10.7849
+INFO     : Reading placement constraints from 'C:/Efinity/Embedded/Lab7/outflow/Lab5.qplace'.
+INFO     : Finished Realigning Types (647 blocks needed type change)
+INFO     : Completed placement consistency check successfully.
+INFO     : Successfully created FPGA place file 'C:/Efinity/Embedded/Lab7/outflow/Lab5.place'
+INFO     : Placement took 21.2902 seconds.
+INFO     : 	Placement took 35.4844 seconds (approximately) in total CPU time.
+INFO     : Placement virtual memory usage: begin = 146.46 MB, end = 160.136 MB, delta = 13.676 MB
+INFO     : 	Placement peak virtual memory usage = 332.052 MB
+INFO     : Placement resident set memory usage: begin = 156.06 MB, end = 164.936 MB, delta = 8.876 MB
+INFO     : 	Placement peak resident set memory usage = 331.864 MB
+           ***** Ending stage placement *****
+           

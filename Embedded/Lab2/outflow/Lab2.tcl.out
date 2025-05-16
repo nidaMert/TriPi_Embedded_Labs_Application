@@ -1,0 +1,107 @@
+INFO     : --max_threads set to 4 
+INFO     : Deleting any pre-existing troute trace files
+INFO     : --max_threads set to 4 
+           ***** Beginning stage netlist pre-processing ... *****
+INFO     : Successfully Read in Verific binary Netlist dump file "C:/Efinity/Embedded/Lab2/outflow/Lab2.vdb".
+INFO     : ***** Beginning VDB Netlist Checker ... *****
+INFO     : VDB Netlist Checker took 0.0639762 seconds.
+INFO     : 	VDB Netlist Checker took 0.078125 seconds (approximately) in total CPU time.
+INFO     : VDB Netlist Checker virtual memory usage: begin = 113.428 MB, end = 114.04 MB, delta = 0.612 MB
+INFO     : 	VDB Netlist Checker peak virtual memory usage = 140.912 MB
+INFO     : VDB Netlist Checker resident set memory usage: begin = 172.176 MB, end = 172.88 MB, delta = 0.704 MB
+INFO     : 	VDB Netlist Checker peak resident set memory usage = 199.964 MB
+INFO     : ***** Ending VDB Netlist Checker ... *****
+INFO     : Reading core interface constraints file "C:/Efinity/Embedded/Lab2/outflow/Lab2.interface.csv"
+INFO     : Successfully read core interface constraints file "C:/Efinity/Embedded/Lab2/outflow/Lab2.interface.csv"
+INFO     : Found 0 constant generator nets.
+INFO     : Pass 0: Swept away 0 nets with no fanout.
+INFO     : logical_block #8(jtag_inst1_UPDATE) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #9(jtag_inst1_RESET) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #24(butons[1]) has no fanout.
+INFO     : Removing input.
+INFO     : logical_block #25(butons[0]) has no fanout.
+INFO     : Removing input.
+INFO     : Pass 0: Swept away 4 blocks with no fanout.
+INFO     : Pass 1: Swept away 0 nets with no fanout.
+INFO     : Pass 1: Swept away 0 blocks with no fanout.
+INFO     : Swept away 0 nets and 4 blocks in total.
+INFO     : Removed 0 LUT buffers
+INFO     : Sweept away 4 nodes
+INFO     : Successfully created VPR logical netlist from Verific binary DataBase file "C:/Efinity/Embedded/Lab2/outflow/Lab2.vdb".
+INFO     : Netlist pre-processing took 0.199053 seconds.
+INFO     : 	Netlist pre-processing took 0.28125 seconds (approximately) in total CPU time.
+INFO     : Netlist pre-processing virtual memory usage: begin = 101.764 MB, end = 125.66 MB, delta = 23.896 MB
+INFO     : 	Netlist pre-processing peak virtual memory usage = 140.912 MB
+INFO     : Netlist pre-processing resident set memory usage: begin = 160.912 MB, end = 184.324 MB, delta = 23.412 MB
+INFO     : 	Netlist pre-processing peak resident set memory usage = 199.964 MB
+           ***** Ending stage netlist pre-processing *****
+           
+INFO     : Read proto netlist file C:/Efinity/Embedded/Lab2/work_pnr\Lab2.net_proto
+INFO     : Read proto netlist for file "C:/Efinity/Embedded/Lab2/work_pnr\Lab2.net_proto" took 0.006 seconds
+INFO     : Setup net and block data structure took 0.229 seconds
+INFO     : Run checks after load placement.
+WARNING  : Clock driver jtag_inst1_TCK should use the dedicated clock pad.
+INFO     : Read ipin pattern from C:/Efinity/2024.1/arch/./ipin_oph.xml
+INFO     : Finished parsing ipin pattern file 'C:/Efinity/2024.1/arch/./ipin_oph.xdb'.
+INFO     : Finished parsing switch_block file 'C:/Efinity/2024.1/arch/.\sb_connectivity_subset.xdb'.
+INFO     : BuildGraph process took 4.80842 seconds.
+INFO     : 	BuildGraph process took 4.67188 seconds (approximately) in total CPU time.
+INFO     : BuildGraph process virtual memory usage: begin = 193.048 MB, end = 571.312 MB, delta = 378.264 MB
+INFO     : 	BuildGraph process peak virtual memory usage = 575.976 MB
+INFO     : BuildGraph process resident set memory usage: begin = 250.896 MB, end = 619.704 MB, delta = 368.808 MB
+INFO     : 	BuildGraph process peak resident set memory usage = 624.284 MB
+INFO     : check rr_graph process took 0.0849622 seconds.
+INFO     : 	check rr_graph process took 0.0625 seconds (approximately) in total CPU time.
+INFO     : check rr_graph process virtual memory usage: begin = 609.316 MB, end = 609.316 MB, delta = 0 MB
+INFO     : 	check rr_graph process peak virtual memory usage = 619.732 MB
+INFO     : check rr_graph process resident set memory usage: begin = 657.648 MB, end = 657.696 MB, delta = 0.048 MB
+INFO     : 	check rr_graph process peak resident set memory usage = 668.052 MB
+INFO     : Generated 1176848 RR nodes and 4445696 RR edges
+INFO     : This design has 0 global control net(s). See C:/Efinity/Embedded/Lab2/outflow\Lab2.pnr.rpt for details.
+INFO     : Reading route file, C:/Efinity/Embedded/Lab2/outflow/Lab2.route
+INFO     : Reading core interface constraints file "C:/Efinity/Embedded/Lab2/outflow/Lab2.interface.csv"
+INFO     : Successfully read core interface constraints file "C:/Efinity/Embedded/Lab2/outflow/Lab2.interface.csv"
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:58] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:58] set_output_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:58] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:59] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:59] set_output_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:59] Unable to run 'set_output_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:60] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:60] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:60] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:61] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:61] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:61] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst1_RESET'
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:62] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:62] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:62] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst1_RESET'
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:63] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:63] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:63] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:64] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:64] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:64] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:65] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:65] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:65] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst1_UPDATE'
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:66] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:66] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:66] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : No ports matched 'jtag_inst1_UPDATE'
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:67] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:67] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:67] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:68] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:68] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:68] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:69] No clocks matched 'jtag_inst1_TCK'
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:69] set_input_delay: No valid clock found for -clock
+WARNING  : [SDC C:/Efinity/Embedded/Lab2/Lab2.pt.sdc:69] Unable to run 'set_input_delay' constraint due to warnings found
+INFO     : SDC file 'C:/Efinity/Embedded/Lab2/Lab2.pt.sdc' parsed successfully.
+INFO     : 1 clocks (including virtual clocks), 2 inputs and 6 outputs were constrained.

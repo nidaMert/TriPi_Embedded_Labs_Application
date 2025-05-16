@@ -1,0 +1,335 @@
+INFO     : Efinix FPGA Synthesis.
+INFO     : Version: 2024.1.163
+INFO     : Compiled: Jun 25 2024.
+INFO     : 
+INFO     : Copyright (C) 2013 - 2024 Efinix, Inc. All rights reserved.
+
+INFO     : Reading project database "C:/Efinity/Embedded/Lab3/Lab2.xml"
+INFO     : Analyzing Verilog file 'C:/Efinity/2024.1/sim_models/maplib/efinix_peri_lib.v' [VERI-1482]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_peri_lib.v(8): compiling module 'EFX_IBUF' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_peri_lib.v(16): compiling module 'EFX_OBUF' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_peri_lib.v(23): compiling module 'EFX_IO_BUF' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_peri_lib.v(33): compiling module 'EFX_CLKOUT' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_peri_lib.v(41): compiling module 'EFX_IREG' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_peri_lib.v(51): compiling module 'EFX_OREG' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_peri_lib.v(60): compiling module 'EFX_IOREG' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_peri_lib.v(75): compiling module 'EFX_IDDIO' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_peri_lib.v(87): compiling module 'EFX_ODDIO' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_peri_lib.v(99): compiling module 'EFX_GPIO_V1' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_peri_lib.v(124): compiling module 'EFX_GPIO_V2' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_peri_lib.v(149): compiling module 'EFX_GPIO_V3' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_peri_lib.v(187): compiling module 'EFX_PLL_V1' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_peri_lib.v(206): compiling module 'EFX_PLL_V2' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_peri_lib.v(232): compiling module 'EFX_PLL_V3' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_peri_lib.v(267): compiling module 'EFX_OSC_V1' [VERI-1018]
+INFO     : Reading project database "C:/Efinity/Embedded/Lab3/Lab2.xml"
+INFO     : ***** Beginning Analysis ... *****
+INFO     : default VHDL library search path is now "C:/Efinity/2024.1/sim_models/vhdl/packages/vhdl_2008" [VHDL-1504]
+INFO     : Analyzing Verilog file 'C:/Efinity/2024.1/sim_models/maplib/efinix_maplib.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'C:/Efinity/2024.1/sim_models/maplib/efinix_peri_lib.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'C:\Efinity\Embedded\Lab3\top.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'C:\Efinity\Embedded\Lab3\apb3_gpio.v' [VERI-1482]
+INFO     : Analyzing Verilog file 'C:/Efinity/Embedded/Lab3\ip/soc\soc.v' [VERI-1482]
+INFO     : Analysis took 0.0776239 seconds.
+INFO     : 	Analysis took 0.078125 seconds (approximately) in total CPU time.
+INFO     : Analysis virtual memory usage: begin = 55.304 MB, end = 58.94 MB, delta = 3.636 MB
+INFO     : 	Analysis peak virtual memory usage = 58.94 MB
+INFO     : Analysis resident set memory usage: begin = 58.36 MB, end = 63.9 MB, delta = 5.54 MB
+INFO     : 	Analysis peak resident set memory usage = 63.904 MB
+INFO     : ***** Ending Analysis ... *****
+INFO     : ***** Beginning Elaboration ... *****
+INFO     : C:\Efinity\Embedded\Lab3\top.v(20): compiling module 'top_soc' [VERI-1018]
+INFO     : C:\Efinity\Embedded\Lab3\apb3_gpio.v(25): compiling module 'apb3_gpio' [VERI-1018]
+INFO     : C:\Efinity\Embedded\Lab3\apb3_gpio.v(52): extracting RAM for identifier 'slaveReg' [VERI-2571]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(49): compiling module 'soc' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(134): compiling module 'EfxSapphireSoc_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(9834): compiling module 'BufferCC_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(9810): compiling module 'BufferCC_1_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(5291): compiling module 'VexRiscv_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(6430): extracting RAM for identifier 'RegFilePlugin_regFile' [VERI-2571]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(11271): compiling module 'StreamFifoLowLatency_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(12038): compiling module 'EfxCPUSp1_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(12109): compiling module 'EfxCPUSp2_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+WARNING  : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(5916): net 'IBusSimplePlugin_rspJoin_fetchRsp_isRvc' does not have a driver [VDB-1002]
+WARNING  : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(6005): net 'CsrPlugin_mtvec_mode[1]' does not have a driver [VDB-1002]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(5272): compiling module 'BufferCC_2_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(5061): compiling module 'JtagBridgeNoTap_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(11199): compiling module 'FlowCCByToggle_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+WARNING  : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(11232): system function call 'urandom' is not supported [VERI-1141]
+WARNING  : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(11233): system function call 'urandom' is not supported [VERI-1141]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(11988): compiling module 'BufferCC_4_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+WARNING  : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(12000): system function call 'urandom' is not supported [VERI-1141]
+WARNING  : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(12001): system function call 'urandom' is not supported [VERI-1141]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(4974): compiling module 'SystemDebugger_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(4950): compiling module 'BufferCC_3_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(4814): compiling module 'BmbArbiter_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(11102): compiling module 'StreamArbiter_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(4774): compiling module 'BmbDecoder_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(4519): compiling module 'BmbDecoder_1_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(4365): compiling module 'BmbDecoder_2_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(4248): compiling module 'BmbOnChipRam_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(4284): extracting RAM for identifier 'ram_symbol0' [VERI-2571]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(4285): extracting RAM for identifier 'ram_symbol1' [VERI-2571]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(4286): extracting RAM for identifier 'ram_symbol2' [VERI-2571]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(4287): extracting RAM for identifier 'ram_symbol3' [VERI-2571]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(3807): compiling module 'BmbDecoder_3_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(3608): compiling module 'BmbClint_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(3105): compiling module 'BmbUartCtrl_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(10973): compiling module 'UartCtrl_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(11748): compiling module 'UartCtrlTx_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(11454): compiling module 'UartCtrlRx_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(12014): compiling module 'BufferCC_5_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(10822): compiling module 'StreamFifo_2_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(10866): extracting RAM for identifier 'logic_ram' [VERI-2571]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(2617): compiling module 'BmbSpiXdrMasterCtrl_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(10173): compiling module 'TopLevel_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(10009): compiling module 'StreamFifo_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(10061): extracting RAM for identifier 'logic_ram' [VERI-2571]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(9858): compiling module 'StreamFifo_1_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(9902): extracting RAM for identifier 'logic_ram' [VERI-2571]
+INFO     : C:/Efinity/Embedded/Lab3\ip/soc\soc.v(2455): compiling module 'BmbToApb3Bridge_b1b8422639334ac1b6c4ad7b92886f07' [VERI-1018]
+WARNING  : C:\Efinity\Embedded\Lab3\top.v(53): net 'userInterruptA' does not have a driver [VDB-1002]
+WARNING  : C:\Efinity\Embedded\Lab3\top.v(92): input port 'system_spi_0_io_data_2_read' remains unconnected for this instance [VDB-1053]
+INFO     : Elaboration took 0.336016 seconds.
+INFO     : 	Elaboration took 0.296875 seconds (approximately) in total CPU time.
+INFO     : Elaboration virtual memory usage: begin = 58.94 MB, end = 98.2 MB, delta = 39.26 MB
+INFO     : 	Elaboration peak virtual memory usage = 98.2 MB
+INFO     : Elaboration resident set memory usage: begin = 63.912 MB, end = 102.4 MB, delta = 38.488 MB
+INFO     : 	Elaboration peak resident set memory usage = 102.404 MB
+INFO     : ***** Ending Elaboration ... *****
+INFO     : ... Setting Synthesis Option: mode=speed
+INFO     : ***** Beginning Reading Mapping Library ... *****
+INFO     : Analyzing Verilog file 'C:/Efinity/2024.1/sim_models/maplib/efinix_maplib.v' [VERI-1482]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_maplib.v(8): compiling module 'EFX_ADD' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_maplib.v(21): compiling module 'EFX_FF' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_maplib.v(38): compiling module 'EFX_COMB4' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_maplib.v(48): compiling module 'EFX_GBUFCE' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_maplib.v(57): compiling module 'EFX_LUT4' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_maplib.v(65): compiling module 'EFX_MULT' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_maplib.v(100): compiling module 'EFX_DSP48' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_maplib.v(156): compiling module 'EFX_DSP24' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_maplib.v(209): compiling module 'EFX_DSP12' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_maplib.v(262): compiling module 'EFX_RAM_4K' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_maplib.v(322): compiling module 'EFX_RAM_5K' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_maplib.v(394): compiling module 'EFX_DPRAM_5K' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_maplib.v(499): compiling module 'RAMB5' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_maplib.v(561): compiling module 'EFX_RAM_10K' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_maplib.v(653): compiling module 'EFX_RAM10' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_maplib.v(754): compiling module 'EFX_DPRAM10' [VERI-1018]
+INFO     : C:/Efinity/2024.1/sim_models/maplib/efinix_maplib.v(884): compiling module 'EFX_SRL8' [VERI-1018]
+INFO     : Reading Mapping Library took 0.0152738 seconds.
+INFO     : 	Reading Mapping Library took 0.015625 seconds (approximately) in total CPU time.
+INFO     : Reading Mapping Library virtual memory usage: begin = 99.644 MB, end = 99.644 MB, delta = 0 MB
+INFO     : 	Reading Mapping Library peak virtual memory usage = 101.248 MB
+INFO     : Reading Mapping Library resident set memory usage: begin = 104.096 MB, end = 104.108 MB, delta = 0.012 MB
+INFO     : 	Reading Mapping Library peak resident set memory usage = 105.572 MB
+INFO     : ***** Ending Reading Mapping Library ... *****
+INFO     : ... Pre-synthesis checks begin
+INFO     : ... Memory 'slaveReg' is not initialized, assuming empty initial contents. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:52) [EFX-0677]
+WARNING  : Removing redundant signal : byteIndex[31]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57) [EFX-0200]
+WARNING  : Removing redundant signal : byteIndex[30]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57) [EFX-0200]
+WARNING  : Removing redundant signal : byteIndex[29]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57) [EFX-0200]
+WARNING  : Removing redundant signal : byteIndex[28]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57) [EFX-0200]
+WARNING  : Removing redundant signal : byteIndex[27]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57) [EFX-0200]
+WARNING  : Removing redundant signal : byteIndex[26]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57) [EFX-0200]
+WARNING  : Removing redundant signal : byteIndex[25]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57) [EFX-0200]
+WARNING  : Removing redundant signal : byteIndex[24]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57) [EFX-0200]
+WARNING  : Removing redundant signal : byteIndex[23]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57) [EFX-0200]
+WARNING  : Removing redundant signal : byteIndex[22]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57) [EFX-0200]
+WARNING  : Removing redundant signal : byteIndex[21]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57) [EFX-0200]
+WARNING  : Removing redundant signal : byteIndex[20]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57) [EFX-0200]
+WARNING  : Removing redundant signal : byteIndex[19]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57) [EFX-0200]
+WARNING  : Removing redundant signal : byteIndex[18]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57) [EFX-0200]
+WARNING  : Removing redundant signal : byteIndex[17]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57) [EFX-0200]
+WARNING  : Removing redundant signal : byteIndex[16]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57) [EFX-0200]
+WARNING  : Removing redundant signal : byteIndex[15]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57) [EFX-0200]
+WARNING  : Removing redundant signal : byteIndex[14]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57) [EFX-0200]
+WARNING  : Removing redundant signal : byteIndex[13]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57) [EFX-0200]
+WARNING  : Removing redundant signal : byteIndex[12]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57) [EFX-0200]
+WARNING  : (The above message was generated too many times, subsequent similar messages will be muted.) [EFX-0200]
+INFO     : Module Instance 'IBusSimplePlugin_rspJoin_rspBuffer_c' input pin 'io_flush' is tied to constant (=0). [EFX-0266]
+WARNING  : Re-wiring to GND non-driven net 'IBusSimplePlugin_rspJoin_fetchRsp_isRvc'. (C:/Efinity/Embedded/Lab3\ip/soc\soc.v:5916) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'CsrPlugin_mtvec_mode[1]'. (C:/Efinity/Embedded/Lab3\ip/soc\soc.v:6005) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'CsrPlugin_mtvec_mode[0]'. (C:/Efinity/Embedded/Lab3\ip/soc\soc.v:6005) [EFX-0201]
+INFO     : ... Memory 'RegFilePlugin_regFile' is not initialized, assuming empty initial contents. (C:/Efinity/Embedded/Lab3\ip/soc\soc.v:6430) [EFX-0677]
+INFO     : Module Instance 'memory_arbiter' input pin 'io_inputs_0_payload_fragment_source[0]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'memory_arbiter' input pin 'io_inputs_1_payload_fragment_source[0]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'memory_arbiter' input pin 'io_inputs_1_payload_fragment_context[0]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'tx' input pin 'io_cts' is tied to constant (=0). [EFX-0266]
+INFO     : ... Memory 'logic_ram' is not initialized, assuming empty initial contents. (C:/Efinity/Embedded/Lab3\ip/soc\soc.v:10866) [EFX-0677]
+INFO     : Module Instance 'bridge_write_streamUnbuffered_queueWithOccupancy' input pin 'io_flush' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy' input pin 'io_flush' is tied to constant (=0). [EFX-0266]
+INFO     : ... Memory 'logic_ram' is not initialized, assuming empty initial contents. (C:/Efinity/Embedded/Lab3\ip/soc\soc.v:10061) [EFX-0677]
+INFO     : ... Memory 'logic_ram' is not initialized, assuming empty initial contents. (C:/Efinity/Embedded/Lab3\ip/soc\soc.v:9902) [EFX-0677]
+INFO     : Module Instance 'mapping_cmdLogic_streamUnbuffered_queueWithAvailability' input pin 'io_flush' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_spi_0_io_logic_ctrl_io_rsp_queueWithOccupancy' input pin 'io_flush' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[0]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[1]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[2]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[3]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[4]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[5]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[6]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[7]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[8]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[9]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[10]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[11]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[12]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[13]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[14]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[15]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[16]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[17]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[18]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[19]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[20]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[21]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[22]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[23]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[24]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[25]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[26]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[27]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[28]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[29]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[30]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_data[31]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_mask[0]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_mask[1]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_mask[2]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_bridge_bmb_arbiter' input pin 'io_inputs_1_cmd_payload_fragment_mask[3]' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'system_clint_logic' input pin 'io_stop' is tied to constant (=0). [EFX-0266]
+INFO     : Module Instance 'led_buton_gpio' input pin 'resetn' is tied to constant (=1). [EFX-0266]
+WARNING  : Re-wiring to GND non-driven net 'u_soc.system_spi_0_io_data_2_read'. (C:\Efinity\Embedded\Lab3\top.v:92) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'u_soc.system_spi_0_io_data_3_read'. (C:\Efinity\Embedded\Lab3\top.v:92) [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'userInterruptA'. (C:\Efinity\Embedded\Lab3\top.v:53) [EFX-0201]
+INFO     : ... Pre-synthesis checks end (Real time : 0s)
+INFO     : ... NameSpace init begin
+INFO     : ... NameSpace init end (Real time : 0s)
+INFO     : ... Mapping design "top_soc"
+INFO     : ... Hierarchical pre-synthesis "apb3_gpio" begin
+INFO     : ... Hierarchical pre-synthesis "apb3_gpio" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "BufferCC_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "BufferCC_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "BufferCC_1_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "BufferCC_1_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "StreamFifoLowLatency_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "StreamFifoLowLatency_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "EfxCPUSp1_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "EfxCPUSp1_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "EfxCPUSp2_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "EfxCPUSp2_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "VexRiscv_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "VexRiscv_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "BufferCC_2_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "BufferCC_2_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "BufferCC_4_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "BufferCC_4_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "FlowCCByToggle_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "FlowCCByToggle_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "JtagBridgeNoTap_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "JtagBridgeNoTap_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "SystemDebugger_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "SystemDebugger_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "BufferCC_3_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "BufferCC_3_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "StreamArbiter_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "StreamArbiter_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "BmbArbiter_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "BmbArbiter_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "BmbDecoder_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "BmbDecoder_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "BmbDecoder_1_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "BmbDecoder_1_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "BmbDecoder_2_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "BmbDecoder_2_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "BmbOnChipRam_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "BmbOnChipRam_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "BmbDecoder_3_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "BmbDecoder_3_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 1s)
+INFO     : ... Hierarchical pre-synthesis "BmbClint_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "BmbClint_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "UartCtrlTx_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "UartCtrlTx_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "BufferCC_5_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "BufferCC_5_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "UartCtrlRx_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "UartCtrlRx_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "UartCtrl_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "UartCtrl_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "StreamFifo_2_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "StreamFifo_2_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "BmbUartCtrl_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "BmbUartCtrl_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "TopLevel_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "TopLevel_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "StreamFifo_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "StreamFifo_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "StreamFifo_1_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "StreamFifo_1_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "BmbSpiXdrMasterCtrl_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "BmbSpiXdrMasterCtrl_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "BmbToApb3Bridge_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "BmbToApb3Bridge_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "EfxSapphireSoc_b1b8422639334ac1b6c4ad7b92886f07" begin
+INFO     : ... Hierarchical pre-synthesis "EfxSapphireSoc_b1b8422639334ac1b6c4ad7b92886f07" end (Real time : 0s)
+INFO     : ... Hierarchical pre-synthesis "soc" begin
+INFO     : ... Hierarchical pre-synthesis "soc" end (Real time : 1s)
+INFO     : ... Hierarchical pre-synthesis "top_soc" begin
+WARNING  : Mapping into logic memory block 'led_buton_gpio/slaveReg' (320 bits) (C:\Efinity\Embedded\Lab3\apb3_gpio.v:52) because it has all constant reader/writer. [EFX-0657]
+INFO     : ... Clock Enable Synthesis Performed on 878 flops.
+INFO     : ... Hierarchical pre-synthesis "top_soc" end (Real time : 0s)
+INFO     : ... Flat optimizations begin
+INFO     : ... Flat optimizations end (Real time : 0s)
+INFO     : ... Flat synthesis begin
+INFO     : ... Flat synthesis end (Real time : 0s)
+INFO     : ... Flat optimizations begin
+INFO     : ... Flat optimizations end (Real time : 0s)
+INFO     : ... Check and break combinational loops begin
+INFO     : ... Check and break combinational loops end (Real time : 0s)
+INFO     : ... Sequential Optimization begin
+INFO     : ... Clock Network 'io_systemClk' with 2826 loads will be considered for sequential optimization.
+INFO     : ... Clock Network 'jtag_inst1_TCK' with 43 loads will be considered for sequential optimization.
+INFO     : ... Sequential Optimization deduced 426 equivalent points.
+INFO     : ... Sequential Optimization end (Real time : 13s)
+INFO     : ... Setup for logic synthesis begin
+INFO     : ... Setup for logic synthesis end (Real time : 0s)
+INFO     : ... LUT mapping begin
+INFO     : ... LS, strategy: 3, nd: 3167, ed: 10354, lv: 8, pw: 6308.37
+INFO     : ... LUT mapping end (Real time : 12s)
+INFO     : ... Post-synthesis Verific netlist creation begin
+INFO     : ... Post-synthesis Verific netlist creation end (Real time : 0s)
+INFO     : ... Postmap Retiming Optimization begin
+INFO     : ... Clock Network 'io_systemClk' with 2694 loads will be considered for retiming optimization.
+INFO     : ... Clock Network 'jtag_inst1_TCK' with 43 loads will be considered for retiming optimization.
+INFO     : ... Performed 0 retime moves.
+INFO     : ... Postmap Retiming Optimization end (Real time : 12s)
+WARNING  : Re-wiring to GND non-driven net 'u_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/n21940'.  [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'u_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/n21941'.  [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'u_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/n21936'.  [EFX-0201]
+WARNING  : Re-wiring to GND non-driven net 'u_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/n21949'.  [EFX-0201]
+WARNING  : (The above message was generated too many times, subsequent similar messages will be muted.) [EFX-0201]
+INFO     : ... Post-synthesis Verific netlist unification/params processing begin
+INFO     : ... Post-synthesis Verific netlist unification/params processing end (Real time : 0s)
+INFO     : ***** Beginning VDB Netlist Checker ... *****
+WARNING  : C:\Efinity\Embedded\Lab3\top.v(29): Input/inout port jtag_inst1_UPDATE is unconnected and will be removed. [VDB-8003]
+WARNING  : C:\Efinity\Embedded\Lab3\top.v(30): Input/inout port jtag_inst1_RESET is unconnected and will be removed. [VDB-8003]
+INFO     : Found 2 warnings in the post-synthesis netlist.
+INFO     : VDB Netlist Checker took 0.0747744 seconds.
+INFO     : 	VDB Netlist Checker took 0.078125 seconds (approximately) in total CPU time.
+INFO     : VDB Netlist Checker virtual memory usage: begin = 153.808 MB, end = 153.808 MB, delta = 0 MB
+INFO     : 	VDB Netlist Checker peak virtual memory usage = 200.968 MB
+INFO     : VDB Netlist Checker resident set memory usage: begin = 157.82 MB, end = 157.88 MB, delta = 0.06 MB
+INFO     : 	VDB Netlist Checker peak resident set memory usage = 205.52 MB
+INFO     : ***** Ending VDB Netlist Checker ... *****
+INFO     : Writing netlist 'top_soc' to Verilog file 'C:/Efinity/Embedded/Lab3/outflow/Lab2.map.v' [VDB-1030]
+INFO     : Resource Summary 
+INFO     : =============================== 
+INFO     : EFX_ADD         : 	584
+INFO     : EFX_LUT4        : 	3164
+INFO     : EFX_MULT        : 	4
+INFO     : EFX_FF          : 	2541
+INFO     : EFX_RAM_5K      : 	16
+INFO     : EFX_GBUFCE      : 	2
+INFO     : =============================== 

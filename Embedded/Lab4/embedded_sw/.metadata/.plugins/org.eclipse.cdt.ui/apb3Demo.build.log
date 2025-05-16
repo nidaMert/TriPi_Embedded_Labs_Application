@@ -1,0 +1,6 @@
+20:34:11 **** Incremental Build of configuration Default for project apb3Demo ****
+make all 
+make: Nothing to be done for 'all'.
+
+20:34:11 Build Finished. 0 errors, 0 warnings. (took 116ms)
+

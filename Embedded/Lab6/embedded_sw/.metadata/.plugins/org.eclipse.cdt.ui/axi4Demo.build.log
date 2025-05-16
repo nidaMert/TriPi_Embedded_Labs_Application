@@ -1,0 +1,6 @@
+22:32:40 **** Incremental Build of configuration Default for project axi4Demo ****
+make all 
+make: Nothing to be done for 'all'.
+
+22:32:41 Build Finished. 0 errors, 0 warnings. (took 97ms)
+

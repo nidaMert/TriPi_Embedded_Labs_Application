@@ -1,0 +1,79 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2024.1.163 
+Date: Fri Apr 04 14:57:35 2025
+
+Copyright (C) 2013 - 2024 Efinix, Inc. All rights reserved.
+ 
+Family: Trion 
+Device: T20Q144
+Top-level Entity Name: Lab1
+Elapsed time for packing: 0 hours 0 minutes 0 seconds
+
+---------- Resource Summary (begin) ----------
+Inputs: 11 / 224 (4.91%)
+Outputs: 15 / 501 (2.99%)
+Clocks: 2 / 16 (12.50%)
+Logic Elements: 4724 / 19728 (23.95%)
+	LE: LUTs/Adders: 3600 / 19728 (18.25%)
+	LE: Registers: 2525 / 13920 (18.14%)
+Memory Blocks: 16 / 204 (7.84%)
+Multipliers: 4 / 36 (11.11%)
+---------- Resource Summary (end) ----------
+
+
+---------- DSP Block Information (begin) ----------
+
++--------------------------------------------------------------+-------+-------+-------+-----------+------------+-----------+------------+-----------+------------+
+|                             NAME                             | A_REG | B_REG | O_REG | RSTA_SYNC | RSTA_VALUE | RSTB_SYNC | RSTB_VALUE | RSTO_SYNC | RSTO_VALUE |
++--------------------------------------------------------------+-------+-------+-------+-----------+------------+-----------+------------+-----------+------------+
+| soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/mult_1846 | true  | false | true  |   true    |   false    |   false   |   false    |   true    |   false    |
+| soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/mult_1847 | false | true  | true  |   false   |   false    |   true    |   false    |   true    |   false    |
+| soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/mult_1848 | false | false | true  |   false   |   false    |   false   |   false    |   true    |   false    |
+| soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/mult_1845 | true  | true  | true  |   true    |   false    |   true    |   false    |   true    |   false    |
++--------------------------------------------------------------+-------+-------+-------+-----------+------------+-----------+------------+-----------+------------+
+
+----------- DSP Block Information (end) ----------
+
+
+---------- Memory Block Information (begin) ----------
+
++-------------------------------------------------------------------------------------------------------------------------+------+------------+-------------+------------+------------+
+|                                                          NAME                                                           | MODE | READ_WIDTH | WRITE_WIDTH | WRITE_MODE | OUTPUT_REG |
++-------------------------------------------------------------------------------------------------------------------------+------+------------+-------------+------------+------------+
+|                     soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/RegFilePlugin_regFile_2__D$1                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                      soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/RegFilePlugin_regFile__D$1                      | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                     soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/RegFilePlugin_regFile_2__D$2                     | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                      soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/RegFilePlugin_regFile__D$2                      | SDP  |     16     |     16      | READ_FIRST |   false    |
+|                              soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$2                               | SDP  |     4      |      4      | READ_FIRST |   false    |
+|                              soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol1__D$1                               | SDP  |     4      |      4      | READ_FIRST |   false    |
+|                              soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$2                               | SDP  |     4      |      4      | READ_FIRST |   false    |
+|                              soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$2                               | SDP  |     4      |      4      | READ_FIRST |   false    |
+|                              soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$1                               | SDP  |     4      |      4      | READ_FIRST |   false    |
+|                              soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol2__D$1                               | SDP  |     4      |      4      | READ_FIRST |   false    |
+|                              soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol3__D$1                               | SDP  |     4      |      4      | READ_FIRST |   false    |
+|                              soc_inst/u_EfxSapphireSoc/system_ramA_logic/ram_symbol0__D$2                               | SDP  |     4      |      4      | READ_FIRST |   false    |
+|       soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/bridge_write_streamUnbuffered_queueWithOccupancy/logic_ram       | SDP  |     8      |      8      | READ_FIRST |   false    |
+| soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy/logic_ram | SDP  |     8      |      8      | READ_FIRST |   false    |
+|    soc_inst/u_EfxSapphireSoc/system_spi_0_io_logic/mapping_cmdLogic_streamUnbuffered_queueWithAvailability/logic_ram    | SDP  |     16     |     16      | READ_FIRST |   false    |
+|     soc_inst/u_EfxSapphireSoc/system_spi_0_io_logic/system_spi_0_io_logic_ctrl_io_rsp_queueWithOccupancy/logic_ram      | SDP  |     8      |      8      | READ_FIRST |   false    |
++-------------------------------------------------------------------------------------------------------------------------+------+------------+-------------+------------+------------+
+
+----------- Memory Block Information (end) ----------
+
+
+---------- IO Interface Summary (begin) ----------
+
++------------------------+--------------+
+| Missing Interface Pins | Input/Output |
++------------------------+--------------+
+|    jtag_inst1_DRCK     |    Input     |
+|     jtag_inst1_TMS     |    Input     |
+|    jtag_inst1_RESET    |    Input     |
+|   jtag_inst1_RUNTEST   |    Input     |
+|   jtag_inst1_UPDATE    |    Input     |
++------------------------+--------------+
+
+----------- IO Interface Summary (end) ----------
+
+Elapsed time for placement: 0 hours 0 minutes 12 seconds

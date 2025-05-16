@@ -1,0 +1,196 @@
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Apr 04, 2025 16:08:57
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] net 'IBusSimplePlugin_rspJoin_fetchRsp_isRvc' does not have a driver (VDB-1002) (C:/Efinity/Embedded/Lab2\ip/soc\soc.v:5916)
+[EFX-0011 VERI-WARNING] net 'CsrPlugin_mtvec_mode[1]' does not have a driver (VDB-1002) (C:/Efinity/Embedded/Lab2\ip/soc\soc.v:6005)
+[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:/Efinity/Embedded/Lab2\ip/soc\soc.v:11232)
+[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:/Efinity/Embedded/Lab2\ip/soc\soc.v:11233)
+[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:/Efinity/Embedded/Lab2\ip/soc\soc.v:12000)
+[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:/Efinity/Embedded/Lab2\ip/soc\soc.v:12001)
+[EFX-0011 VERI-WARNING] net 'userInterruptA' does not have a driver (VDB-1002) (C:\Efinity\Embedded\Lab2\top.v:53)
+[EFX-0011 VERI-WARNING] input port 'system_spi_0_io_data_2_read' remains unconnected for this instance (VDB-1053) (C:\Efinity\Embedded\Lab2\top.v:90)
+[EFX-0256 WARNING] The primary output port 'leds[3]' wire 'leds[3]' is not driven.
+[EFX-0256 WARNING] The primary output port 'leds[2]' wire 'leds[2]' is not driven.
+[EFX-0256 WARNING] The primary output port 'leds[1]' wire 'leds[1]' is not driven.
+[EFX-0256 WARNING] The primary output port 'leds[0]' wire 'leds[0]' is not driven.
+[EFX-0200 WARNING] Removing redundant signal : PADDR[15]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : PADDR[14]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : PADDR[13]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : PADDR[12]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : PADDR[11]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : PADDR[10]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : PADDR[9]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : PADDR[8]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : PADDR[7]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : PADDR[6]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : PADDR[5]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : PADDR[4]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[31]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:178)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[30]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:178)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[29]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:178)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[28]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:178)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[27]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:178)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[26]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:178)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[25]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:178)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[24]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:178)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'IBusSimplePlugin_rspJoin_fetchRsp_isRvc'. (C:/Efinity/Embedded/Lab2\ip/soc\soc.v:5916)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'CsrPlugin_mtvec_mode[1]'. (C:/Efinity/Embedded/Lab2\ip/soc\soc.v:6005)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'CsrPlugin_mtvec_mode[0]'. (C:/Efinity/Embedded/Lab2\ip/soc\soc.v:6005)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_soc.system_spi_0_io_data_2_read'. (C:\Efinity\Embedded\Lab2\top.v:90)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_soc.system_spi_0_io_data_3_read'. (C:\Efinity\Embedded\Lab2\top.v:90)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'leds[3]'. (C:\Efinity\Embedded\Lab2\top.v:43)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'leds[2]'. (C:\Efinity\Embedded\Lab2\top.v:43)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'leds[1]'. (C:\Efinity\Embedded\Lab2\top.v:43)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'leds[0]'. (C:\Efinity\Embedded\Lab2\top.v:43)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'userInterruptA'. (C:\Efinity\Embedded\Lab2\top.v:53)
+[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_UPDATE is unconnected and will be removed. (VDB-8003) (C:\Efinity\Embedded\Lab2\top.v:29)
+[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_RESET is unconnected and will be removed. (VDB-8003) (C:\Efinity\Embedded\Lab2\top.v:30)
+[EFX-0011 VERI-WARNING] Input/inout port butons[1] is unconnected and will be removed. (VDB-8003) (C:\Efinity\Embedded\Lab2\top.v:44)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Apr 04, 2025 16:10:44
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] net 'IBusSimplePlugin_rspJoin_fetchRsp_isRvc' does not have a driver (VDB-1002) (C:/Efinity/Embedded/Lab2\ip/soc\soc.v:5916)
+[EFX-0011 VERI-WARNING] net 'CsrPlugin_mtvec_mode[1]' does not have a driver (VDB-1002) (C:/Efinity/Embedded/Lab2\ip/soc\soc.v:6005)
+[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:/Efinity/Embedded/Lab2\ip/soc\soc.v:11232)
+[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:/Efinity/Embedded/Lab2\ip/soc\soc.v:11233)
+[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:/Efinity/Embedded/Lab2\ip/soc\soc.v:12000)
+[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:/Efinity/Embedded/Lab2\ip/soc\soc.v:12001)
+[EFX-0011 VERI-WARNING] net 'userInterruptA' does not have a driver (VDB-1002) (C:\Efinity\Embedded\Lab2\top.v:53)
+[EFX-0011 VERI-WARNING] input port 'system_spi_0_io_data_2_read' remains unconnected for this instance (VDB-1053) (C:\Efinity\Embedded\Lab2\top.v:90)
+[EFX-0256 WARNING] The primary output port 'leds[3]' wire 'leds[3]' is not driven.
+[EFX-0256 WARNING] The primary output port 'leds[2]' wire 'leds[2]' is not driven.
+[EFX-0256 WARNING] The primary output port 'leds[1]' wire 'leds[1]' is not driven.
+[EFX-0256 WARNING] The primary output port 'leds[0]' wire 'leds[0]' is not driven.
+[EFX-0200 WARNING] Removing redundant signal : PADDR[15]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : PADDR[14]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : PADDR[13]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : PADDR[12]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : PADDR[11]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : PADDR[10]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : PADDR[9]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : PADDR[8]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : PADDR[7]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : PADDR[6]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : PADDR[5]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : PADDR[4]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:160)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[31]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:178)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[30]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:178)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[29]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:178)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[28]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:178)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[27]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:178)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[26]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:178)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[25]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:178)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[24]. (C:\Efinity\Embedded\Lab2\apb3_gpio.v:178)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'IBusSimplePlugin_rspJoin_fetchRsp_isRvc'. (C:/Efinity/Embedded/Lab2\ip/soc\soc.v:5916)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'CsrPlugin_mtvec_mode[1]'. (C:/Efinity/Embedded/Lab2\ip/soc\soc.v:6005)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'CsrPlugin_mtvec_mode[0]'. (C:/Efinity/Embedded/Lab2\ip/soc\soc.v:6005)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_soc.system_spi_0_io_data_2_read'. (C:\Efinity\Embedded\Lab2\top.v:90)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_soc.system_spi_0_io_data_3_read'. (C:\Efinity\Embedded\Lab2\top.v:90)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'leds[3]'. (C:\Efinity\Embedded\Lab2\top.v:43)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'leds[2]'. (C:\Efinity\Embedded\Lab2\top.v:43)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'leds[1]'. (C:\Efinity\Embedded\Lab2\top.v:43)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'leds[0]'. (C:\Efinity\Embedded\Lab2\top.v:43)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'userInterruptA'. (C:\Efinity\Embedded\Lab2\top.v:53)
+[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_UPDATE is unconnected and will be removed. (VDB-8003) (C:\Efinity\Embedded\Lab2\top.v:29)
+[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_RESET is unconnected and will be removed. (VDB-8003) (C:\Efinity\Embedded\Lab2\top.v:30)
+[EFX-0011 VERI-WARNING] Input/inout port butons[1] is unconnected and will be removed. (VDB-8003) (C:\Efinity\Embedded\Lab2\top.v:44)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Apr 04, 2025 19:03:16
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] net 'IBusSimplePlugin_rspJoin_fetchRsp_isRvc' does not have a driver (VDB-1002) (C:/Efinity/Embedded/Lab3\ip/soc\soc.v:5916)
+[EFX-0011 VERI-WARNING] net 'CsrPlugin_mtvec_mode[1]' does not have a driver (VDB-1002) (C:/Efinity/Embedded/Lab3\ip/soc\soc.v:6005)
+[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:/Efinity/Embedded/Lab3\ip/soc\soc.v:11232)
+[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:/Efinity/Embedded/Lab3\ip/soc\soc.v:11233)
+[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:/Efinity/Embedded/Lab3\ip/soc\soc.v:12000)
+[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:/Efinity/Embedded/Lab3\ip/soc\soc.v:12001)
+[EFX-0011 VERI-WARNING] net 'userInterruptA' does not have a driver (VDB-1002) (C:\Efinity\Embedded\Lab3\top.v:53)
+[EFX-0011 VERI-WARNING] input port 'system_spi_0_io_data_2_read' remains unconnected for this instance (VDB-1053) (C:\Efinity\Embedded\Lab3\top.v:92)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[31]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[30]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[29]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[28]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[27]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[26]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[25]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[24]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[23]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[22]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[21]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[20]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[19]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[18]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[17]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[16]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[15]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[14]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[13]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[12]. (C:\Efinity\Embedded\Lab3\apb3_gpio.v:57)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'IBusSimplePlugin_rspJoin_fetchRsp_isRvc'. (C:/Efinity/Embedded/Lab3\ip/soc\soc.v:5916)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'CsrPlugin_mtvec_mode[1]'. (C:/Efinity/Embedded/Lab3\ip/soc\soc.v:6005)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'CsrPlugin_mtvec_mode[0]'. (C:/Efinity/Embedded/Lab3\ip/soc\soc.v:6005)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_soc.system_spi_0_io_data_2_read'. (C:\Efinity\Embedded\Lab3\top.v:92)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_soc.system_spi_0_io_data_3_read'. (C:\Efinity\Embedded\Lab3\top.v:92)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'userInterruptA'. (C:\Efinity\Embedded\Lab3\top.v:53)
+[EFX-0657 WARNING] Mapping into logic memory block 'led_buton_gpio/slaveReg' (320 bits) (C:\Efinity\Embedded\Lab3\apb3_gpio.v:52) because it has all constant reader/writer.
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/n21940'. 
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/n21941'. 
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/n21936'. 
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/n21949'. 
+[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_UPDATE is unconnected and will be removed. (VDB-8003) (C:\Efinity\Embedded\Lab3\top.v:29)
+[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_RESET is unconnected and will be removed. (VDB-8003) (C:\Efinity\Embedded\Lab3\top.v:30)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Apr 04, 2025 20:27:08
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] net 'IBusSimplePlugin_rspJoin_fetchRsp_isRvc' does not have a driver (VDB-1002) (C:/Efinity/Embedded/Lab4\ip/soc\soc.v:5916)
+[EFX-0011 VERI-WARNING] net 'CsrPlugin_mtvec_mode[1]' does not have a driver (VDB-1002) (C:/Efinity/Embedded/Lab4\ip/soc\soc.v:6005)
+[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:/Efinity/Embedded/Lab4\ip/soc\soc.v:11232)
+[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:/Efinity/Embedded/Lab4\ip/soc\soc.v:11233)
+[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:/Efinity/Embedded/Lab4\ip/soc\soc.v:12000)
+[EFX-0011 VERI-WARNING] system function call 'urandom' is not supported (VERI-1141) (C:/Efinity/Embedded/Lab4\ip/soc\soc.v:12001)
+[EFX-0011 VERI-WARNING] net 'userInterruptA' does not have a driver (VDB-1002) (C:\Efinity\Embedded\Lab4\top.v:53)
+[EFX-0011 VERI-WARNING] input port 'system_spi_0_io_data_2_read' remains unconnected for this instance (VDB-1053) (C:\Efinity\Embedded\Lab4\top.v:92)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[31]. (C:\Efinity\Embedded\Lab4\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[30]. (C:\Efinity\Embedded\Lab4\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[29]. (C:\Efinity\Embedded\Lab4\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[28]. (C:\Efinity\Embedded\Lab4\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[27]. (C:\Efinity\Embedded\Lab4\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[26]. (C:\Efinity\Embedded\Lab4\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[25]. (C:\Efinity\Embedded\Lab4\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[24]. (C:\Efinity\Embedded\Lab4\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[23]. (C:\Efinity\Embedded\Lab4\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[22]. (C:\Efinity\Embedded\Lab4\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[21]. (C:\Efinity\Embedded\Lab4\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[20]. (C:\Efinity\Embedded\Lab4\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[19]. (C:\Efinity\Embedded\Lab4\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[18]. (C:\Efinity\Embedded\Lab4\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[17]. (C:\Efinity\Embedded\Lab4\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[16]. (C:\Efinity\Embedded\Lab4\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[15]. (C:\Efinity\Embedded\Lab4\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[14]. (C:\Efinity\Embedded\Lab4\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[13]. (C:\Efinity\Embedded\Lab4\apb3_gpio.v:57)
+[EFX-0200 WARNING] Removing redundant signal : byteIndex[12]. (C:\Efinity\Embedded\Lab4\apb3_gpio.v:57)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'IBusSimplePlugin_rspJoin_fetchRsp_isRvc'. (C:/Efinity/Embedded/Lab4\ip/soc\soc.v:5916)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'CsrPlugin_mtvec_mode[1]'. (C:/Efinity/Embedded/Lab4\ip/soc\soc.v:6005)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'CsrPlugin_mtvec_mode[0]'. (C:/Efinity/Embedded/Lab4\ip/soc\soc.v:6005)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_soc.system_spi_0_io_data_2_read'. (C:\Efinity\Embedded\Lab4\top.v:92)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_soc.system_spi_0_io_data_3_read'. (C:\Efinity\Embedded\Lab4\top.v:92)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'userInterruptA'. (C:\Efinity\Embedded\Lab4\top.v:53)
+[EFX-0657 WARNING] Mapping into logic memory block 'led_buton_gpio/slaveReg' (320 bits) (C:\Efinity\Embedded\Lab4\apb3_gpio.v:52) because it has all constant reader/writer.
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/n21940'. 
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/n21941'. 
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/n21936'. 
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_soc/u_EfxSapphireSoc/system_cores_0_logic_cpu/n21949'. 
+[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_UPDATE is unconnected and will be removed. (VDB-8003) (C:\Efinity\Embedded\Lab4\top.v:29)
+[EFX-0011 VERI-WARNING] Input/inout port jtag_inst1_RESET is unconnected and will be removed. (VDB-8003) (C:\Efinity\Embedded\Lab4\top.v:30)

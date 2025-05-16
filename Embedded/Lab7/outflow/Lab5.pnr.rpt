@@ -1,0 +1,12 @@
+
+---------- Resource Summary (begin) ----------
+Inputs: 19 / 224 (8.48%)
+Outputs: 33 / 501 (6.59%)
+Clocks: 3 / 16 (18.75%)
+Logic Elements: 6878 / 19728 (34.86%)
+	LE: LUTs/Adders: 5021 / 19728 (25.45%)
+	LE: Registers: 3754 / 13920 (26.97%)
+Memory Blocks: 22 / 204 (10.78%)
+Multipliers: 4 / 36 (11.11%)
+---------- Resource Summary (end) ----------
+

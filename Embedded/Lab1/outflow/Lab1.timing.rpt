@@ -1,0 +1,1603 @@
+
+Efinix Static Timing Analysis Report
+Version: 2024.1.163
+Date: Fri Apr 04 14:58:02 2025
+
+Copyright (C) 2013 - 2024  All rights reserved.
+
+Top-level Entity Name: Lab1
+
+SDC Filename: C:/Efinity/Embedded/Lab1/Lab1.pt.sdc
+
+Timing Model: C4
+	temperature : 0C to 85C
+	voltage : 1.2V +/-50mV
+	speedgrade : 4
+	technology : s40ll
+	status : final
+
+---------- Table of Contents (begin) ----------
+   1. Clock Frequency Summary
+   2. Clock Relationship Summary
+   3. Path Details for Max Critical Paths
+   4. Path Details for Min Critical Paths
+---------- Table of Contents (end) ------------
+
+---------- 1. Clock Frequency Summary (begin) ----------
+
+User target constrained clocks
+ Clock Name  Period (ns)  Frequency (MHz)    Waveform       Targets
+io_systemClk    50.000        20.000      {0.000 25.000} {io_systemClk}
+
+Maximum possible analyzed clocks frequency
+ Clock Name  Period (ns)  Frequency (MHz)     Edge
+io_systemClk    21.726        46.028         (R-R)
+
+Geomean max period: 21.726
+
+---------- Clock Frequency Summary (end) ---------------
+
+---------- 2. Clock Relationship Summary (begin) ----------
+
+Setup (Max) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+  io_systemClk     io_systemClk        50.000           28.274           (R-R)
+
+Hold (Min) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+  io_systemClk     io_systemClk        0.000            0.119            (R-R)
+
+NOTE: Values are in nanoseconds.
+
+---------- Clock Relationship Summary (end) ---------------
+
+---------- 3. Path Details for Max Critical Paths (begin) ----------
+
+################################################################################
+Path Detail Report (io_systemClk vs io_systemClk)
+################################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|CLK
+Path End      : soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/CsrPlugin_mepc[24]~FF|CE         
+Launch Clock  : io_systemClk (RISE)                                                                 
+Capture Clock : io_systemClk (RISE)                                                                 
+Slack         : 28.274 (required time - arrival time)                                               
+Delay         : 21.149                                                                              
+
+Logic Level             : 7
+Non-global nets on path : 8
+Global nets on path     : 0
+
+Launch Clock Path Delay        :  4.110
++ Clock To Q + Data Path Delay : 21.606
+---------------------------------------
+End-of-path arrival time       : 25.716
+
+Constraint                     : 50.000
++ Capture Clock Path Delay     :  4.110
+- Clock Uncertainty            :  0.120
+---------------------------------------
+End-of-path required time      : 53.990
+
+Launch Clock Path
+                                        name                                          model name   delay (ns)  cumulative delay (ns) pins on net    location
+==============================================================================================================================================================
+io_systemClk                                                                            inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                            inpad        0.200             0.200                2      (160,118)
+io_systemClk                                                                            net          0.320             0.520                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                             gbuf         3.590             4.110                2      (159,118)
+CLKBUF__0|O                                                                             gbuf         0.000             4.110             2525      (159,118)
+io_systemClk~O                                                                          net          0.000             4.110             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|CLK    ff           0.000             4.110             2525      (67,7)   
+
+Data Path
+                                       name                                         model name   delay (ns)  cumulative delay (ns) pins on net    location
+============================================================================================================================================================
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|Q     ff          0.282             0.282              12        (67,7)  
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid          net         2.609             2.891              12        (67,7)  
+   Routing elements:
+      Manhattan distance of X:55, Y:28
+LUT__12789|in[2]                                                                       lut         0.000             2.891              12        (122,35)
+LUT__12789|out                                                                         lut         0.000             2.891              34        (122,35)
+n5945                                                                                  net         1.884             4.775              34        (122,35)
+   Routing elements:
+      Manhattan distance of X:25, Y:2
+LUT__12790|in[2]                                                                       lut         0.000             4.775              34        (97,37) 
+LUT__12790|out                                                                         lut         0.000             4.775              37        (97,37) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/n21814                              net         3.132             7.907              37        (97,37) 
+   Routing elements:
+      Manhattan distance of X:25, Y:43
+LUT__12791|in[3]                                                                       lut         0.000             7.907              37        (122,80)
+LUT__12791|out                                                                         lut         0.000             7.907             388        (122,80)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_haltItself       net         2.691            10.598             388        (122,80)
+   Routing elements:
+      Manhattan distance of X:78, Y:66
+LUT__13301|in[0]                                                                       lut         0.000            10.598             388        (44,14) 
+LUT__13301|out                                                                         lut         0.000            10.598             237        (44,14) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/execute_arbitration_isStuck         net         1.341            11.939             237        (44,14) 
+   Routing elements:
+      Manhattan distance of X:28, Y:1
+LUT__13302|in[0]                                                                       lut         0.000            11.939             237        (72,13) 
+LUT__13302|out                                                                         lut         0.000            11.939               7        (72,13) 
+n6259                                                                                  net         0.698            12.637               7        (72,13) 
+   Routing elements:
+      Manhattan distance of X:17, Y:0
+LUT__13393|in[0]                                                                       lut         0.000            12.637               7        (89,13) 
+LUT__13393|out                                                                         lut         0.000            12.637              34        (89,13) 
+n6285                                                                                  net         2.229            14.866              34        (89,13) 
+   Routing elements:
+      Manhattan distance of X:25, Y:2
+LUT__13399|in[3]                                                                       lut         0.000            14.866              34        (114,11)
+LUT__13399|out                                                                         lut         0.000            14.866              33        (114,11)
+ceg_net43                                                                              net         6.565            21.431              33        (114,11)
+   Routing elements:
+      Manhattan distance of X:47, Y:86
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/CsrPlugin_mepc[24]~FF|CE            ff          0.175            21.606              33        (67,97) 
+
+Capture Clock Path
+                                    name                                      model name   delay (ns)  cumulative delay (ns) pins on net    location
+======================================================================================================================================================
+io_systemClk                                                                    inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                    inpad        0.200             0.200                2      (160,118)
+io_systemClk                                                                    net          0.320             0.520                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                     gbuf         3.590             4.110                2      (159,118)
+CLKBUF__0|O                                                                     gbuf         0.000             4.110             2525      (159,118)
+io_systemClk~O                                                                  net          0.000             4.110             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/CsrPlugin_mepc[24]~FF|CLK    ff           0.000             4.110             2525      (67,97)  
+
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|CLK       
+Path End      : soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[15]~FF|CE
+Launch Clock  : io_systemClk (RISE)                                                                        
+Capture Clock : io_systemClk (RISE)                                                                        
+Slack         : 28.321 (required time - arrival time)                                                      
+Delay         : 21.102                                                                                     
+
+Logic Level             : 7
+Non-global nets on path : 8
+Global nets on path     : 0
+
+Launch Clock Path Delay        :  4.110
++ Clock To Q + Data Path Delay : 21.559
+---------------------------------------
+End-of-path arrival time       : 25.669
+
+Constraint                     : 50.000
++ Capture Clock Path Delay     :  4.110
+- Clock Uncertainty            :  0.120
+---------------------------------------
+End-of-path required time      : 53.990
+
+Launch Clock Path
+                                        name                                          model name   delay (ns)  cumulative delay (ns) pins on net    location
+==============================================================================================================================================================
+io_systemClk                                                                            inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                            inpad        0.200             0.200                2      (160,118)
+io_systemClk                                                                            net          0.320             0.520                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                             gbuf         3.590             4.110                2      (159,118)
+CLKBUF__0|O                                                                             gbuf         0.000             4.110             2525      (159,118)
+io_systemClk~O                                                                          net          0.000             4.110             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|CLK    ff           0.000             4.110             2525      (67,7)   
+
+Data Path
+                                              name                                                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================================================================================
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|Q                    ff          0.282             0.282              12        (67,7)  
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid                         net         2.609             2.891              12        (67,7)  
+   Routing elements:
+      Manhattan distance of X:55, Y:28
+LUT__12789|in[2]                                                                                      lut         0.000             2.891              12        (122,35)
+LUT__12789|out                                                                                        lut         0.000             2.891              34        (122,35)
+n5945                                                                                                 net         1.884             4.775              34        (122,35)
+   Routing elements:
+      Manhattan distance of X:25, Y:2
+LUT__12790|in[2]                                                                                      lut         0.000             4.775              34        (97,37) 
+LUT__12790|out                                                                                        lut         0.000             4.775              37        (97,37) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/n21814                                             net         3.132             7.907              37        (97,37) 
+   Routing elements:
+      Manhattan distance of X:25, Y:43
+LUT__12791|in[3]                                                                                      lut         0.000             7.907              37        (122,80)
+LUT__12791|out                                                                                        lut         0.000             7.907             388        (122,80)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_haltItself                      net         2.899            10.806             388        (122,80)
+   Routing elements:
+      Manhattan distance of X:82, Y:62
+LUT__12802|in[1]                                                                                      lut         0.000            10.806             388        (40,18) 
+LUT__12802|out                                                                                        lut         0.000            10.806               3        (40,18) 
+n5955                                                                                                 net         0.821            11.627               3        (40,18) 
+   Routing elements:
+      Manhattan distance of X:4, Y:0
+LUT__12803|in[3]                                                                                      lut         0.000            11.627               3        (36,18) 
+LUT__12803|out                                                                                        lut         0.000            11.627              50        (36,18) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/decode_arbitration_isStuck                         net         0.560            12.187              50        (36,18) 
+   Routing elements:
+      Manhattan distance of X:0, Y:5
+LUT__13289|in[1]                                                                                      lut         0.000            12.187              50        (36,13) 
+LUT__13289|out                                                                                        lut         0.000            12.187              36        (36,13) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_iBusRsp_stages_2_output_ready     net         3.571            15.758              36        (36,13) 
+   Routing elements:
+      Manhattan distance of X:26, Y:10
+LUT__13669|in[2]                                                                                      lut         0.000            15.758              36        (62,23) 
+LUT__13669|out                                                                                        lut         0.000            15.758              31        (62,23) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/when_Fetcher_l160                                  net         5.626            21.384              31        (62,23) 
+   Routing elements:
+      Manhattan distance of X:15, Y:50
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[15]~FF|CE           ff          0.175            21.559              31        (47,73) 
+
+Capture Clock Path
+                                            name                                              model name   delay (ns)  cumulative delay (ns) pins on net    location
+======================================================================================================================================================================
+io_systemClk                                                                                    inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                                    inpad        0.200             0.200                2      (160,118)
+io_systemClk                                                                                    net          0.320             0.520                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                                     gbuf         3.590             4.110                2      (159,118)
+CLKBUF__0|O                                                                                     gbuf         0.000             4.110             2525      (159,118)
+io_systemClk~O                                                                                  net          0.000             4.110             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[15]~FF|CLK    ff           0.000             4.110             2525      (47,73)  
+
+++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|CLK       
+Path End      : soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[13]~FF|CE
+Launch Clock  : io_systemClk (RISE)                                                                        
+Capture Clock : io_systemClk (RISE)                                                                        
+Slack         : 28.321 (required time - arrival time)                                                      
+Delay         : 21.102                                                                                     
+
+Logic Level             : 7
+Non-global nets on path : 8
+Global nets on path     : 0
+
+Launch Clock Path Delay        :  4.110
++ Clock To Q + Data Path Delay : 21.559
+---------------------------------------
+End-of-path arrival time       : 25.669
+
+Constraint                     : 50.000
++ Capture Clock Path Delay     :  4.110
+- Clock Uncertainty            :  0.120
+---------------------------------------
+End-of-path required time      : 53.990
+
+Launch Clock Path
+                                        name                                          model name   delay (ns)  cumulative delay (ns) pins on net    location
+==============================================================================================================================================================
+io_systemClk                                                                            inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                            inpad        0.200             0.200                2      (160,118)
+io_systemClk                                                                            net          0.320             0.520                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                             gbuf         3.590             4.110                2      (159,118)
+CLKBUF__0|O                                                                             gbuf         0.000             4.110             2525      (159,118)
+io_systemClk~O                                                                          net          0.000             4.110             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|CLK    ff           0.000             4.110             2525      (67,7)   
+
+Data Path
+                                              name                                                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================================================================================
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|Q                    ff          0.282             0.282              12        (67,7)  
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid                         net         2.609             2.891              12        (67,7)  
+   Routing elements:
+      Manhattan distance of X:55, Y:28
+LUT__12789|in[2]                                                                                      lut         0.000             2.891              12        (122,35)
+LUT__12789|out                                                                                        lut         0.000             2.891              34        (122,35)
+n5945                                                                                                 net         1.884             4.775              34        (122,35)
+   Routing elements:
+      Manhattan distance of X:25, Y:2
+LUT__12790|in[2]                                                                                      lut         0.000             4.775              34        (97,37) 
+LUT__12790|out                                                                                        lut         0.000             4.775              37        (97,37) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/n21814                                             net         3.132             7.907              37        (97,37) 
+   Routing elements:
+      Manhattan distance of X:25, Y:43
+LUT__12791|in[3]                                                                                      lut         0.000             7.907              37        (122,80)
+LUT__12791|out                                                                                        lut         0.000             7.907             388        (122,80)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_haltItself                      net         2.899            10.806             388        (122,80)
+   Routing elements:
+      Manhattan distance of X:82, Y:62
+LUT__12802|in[1]                                                                                      lut         0.000            10.806             388        (40,18) 
+LUT__12802|out                                                                                        lut         0.000            10.806               3        (40,18) 
+n5955                                                                                                 net         0.821            11.627               3        (40,18) 
+   Routing elements:
+      Manhattan distance of X:4, Y:0
+LUT__12803|in[3]                                                                                      lut         0.000            11.627               3        (36,18) 
+LUT__12803|out                                                                                        lut         0.000            11.627              50        (36,18) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/decode_arbitration_isStuck                         net         0.560            12.187              50        (36,18) 
+   Routing elements:
+      Manhattan distance of X:0, Y:5
+LUT__13289|in[1]                                                                                      lut         0.000            12.187              50        (36,13) 
+LUT__13289|out                                                                                        lut         0.000            12.187              36        (36,13) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_iBusRsp_stages_2_output_ready     net         3.571            15.758              36        (36,13) 
+   Routing elements:
+      Manhattan distance of X:26, Y:10
+LUT__13669|in[2]                                                                                      lut         0.000            15.758              36        (62,23) 
+LUT__13669|out                                                                                        lut         0.000            15.758              31        (62,23) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/when_Fetcher_l160                                  net         5.626            21.384              31        (62,23) 
+   Routing elements:
+      Manhattan distance of X:15, Y:42
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[13]~FF|CE           ff          0.175            21.559              31        (47,65) 
+
+Capture Clock Path
+                                            name                                              model name   delay (ns)  cumulative delay (ns) pins on net    location
+======================================================================================================================================================================
+io_systemClk                                                                                    inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                                    inpad        0.200             0.200                2      (160,118)
+io_systemClk                                                                                    net          0.320             0.520                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                                     gbuf         3.590             4.110                2      (159,118)
+CLKBUF__0|O                                                                                     gbuf         0.000             4.110             2525      (159,118)
+io_systemClk~O                                                                                  net          0.000             4.110             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[13]~FF|CLK    ff           0.000             4.110             2525      (47,65)  
+
+++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|CLK       
+Path End      : soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[21]~FF|CE
+Launch Clock  : io_systemClk (RISE)                                                                        
+Capture Clock : io_systemClk (RISE)                                                                        
+Slack         : 28.453 (required time - arrival time)                                                      
+Delay         : 20.970                                                                                     
+
+Logic Level             : 7
+Non-global nets on path : 8
+Global nets on path     : 0
+
+Launch Clock Path Delay        :  4.110
++ Clock To Q + Data Path Delay : 21.427
+---------------------------------------
+End-of-path arrival time       : 25.537
+
+Constraint                     : 50.000
++ Capture Clock Path Delay     :  4.110
+- Clock Uncertainty            :  0.120
+---------------------------------------
+End-of-path required time      : 53.990
+
+Launch Clock Path
+                                        name                                          model name   delay (ns)  cumulative delay (ns) pins on net    location
+==============================================================================================================================================================
+io_systemClk                                                                            inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                            inpad        0.200             0.200                2      (160,118)
+io_systemClk                                                                            net          0.320             0.520                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                             gbuf         3.590             4.110                2      (159,118)
+CLKBUF__0|O                                                                             gbuf         0.000             4.110             2525      (159,118)
+io_systemClk~O                                                                          net          0.000             4.110             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|CLK    ff           0.000             4.110             2525      (67,7)   
+
+Data Path
+                                              name                                                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================================================================================
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|Q                    ff          0.282             0.282              12        (67,7)  
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid                         net         2.609             2.891              12        (67,7)  
+   Routing elements:
+      Manhattan distance of X:55, Y:28
+LUT__12789|in[2]                                                                                      lut         0.000             2.891              12        (122,35)
+LUT__12789|out                                                                                        lut         0.000             2.891              34        (122,35)
+n5945                                                                                                 net         1.884             4.775              34        (122,35)
+   Routing elements:
+      Manhattan distance of X:25, Y:2
+LUT__12790|in[2]                                                                                      lut         0.000             4.775              34        (97,37) 
+LUT__12790|out                                                                                        lut         0.000             4.775              37        (97,37) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/n21814                                             net         3.132             7.907              37        (97,37) 
+   Routing elements:
+      Manhattan distance of X:25, Y:43
+LUT__12791|in[3]                                                                                      lut         0.000             7.907              37        (122,80)
+LUT__12791|out                                                                                        lut         0.000             7.907             388        (122,80)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_haltItself                      net         2.899            10.806             388        (122,80)
+   Routing elements:
+      Manhattan distance of X:82, Y:62
+LUT__12802|in[1]                                                                                      lut         0.000            10.806             388        (40,18) 
+LUT__12802|out                                                                                        lut         0.000            10.806               3        (40,18) 
+n5955                                                                                                 net         0.821            11.627               3        (40,18) 
+   Routing elements:
+      Manhattan distance of X:4, Y:0
+LUT__12803|in[3]                                                                                      lut         0.000            11.627               3        (36,18) 
+LUT__12803|out                                                                                        lut         0.000            11.627              50        (36,18) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/decode_arbitration_isStuck                         net         0.560            12.187              50        (36,18) 
+   Routing elements:
+      Manhattan distance of X:0, Y:5
+LUT__13289|in[1]                                                                                      lut         0.000            12.187              50        (36,13) 
+LUT__13289|out                                                                                        lut         0.000            12.187              36        (36,13) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_iBusRsp_stages_2_output_ready     net         3.571            15.758              36        (36,13) 
+   Routing elements:
+      Manhattan distance of X:26, Y:10
+LUT__13669|in[2]                                                                                      lut         0.000            15.758              36        (62,23) 
+LUT__13669|out                                                                                        lut         0.000            15.758              31        (62,23) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/when_Fetcher_l160                                  net         5.494            21.252              31        (62,23) 
+   Routing elements:
+      Manhattan distance of X:17, Y:69
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[21]~FF|CE           ff          0.175            21.427              31        (45,92) 
+
+Capture Clock Path
+                                            name                                              model name   delay (ns)  cumulative delay (ns) pins on net    location
+======================================================================================================================================================================
+io_systemClk                                                                                    inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                                    inpad        0.200             0.200                2      (160,118)
+io_systemClk                                                                                    net          0.320             0.520                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                                     gbuf         3.590             4.110                2      (159,118)
+CLKBUF__0|O                                                                                     gbuf         0.000             4.110             2525      (159,118)
+io_systemClk~O                                                                                  net          0.000             4.110             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[21]~FF|CLK    ff           0.000             4.110             2525      (45,92)  
+
+++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|CLK       
+Path End      : soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[16]~FF|CE
+Launch Clock  : io_systemClk (RISE)                                                                        
+Capture Clock : io_systemClk (RISE)                                                                        
+Slack         : 28.453 (required time - arrival time)                                                      
+Delay         : 20.970                                                                                     
+
+Logic Level             : 7
+Non-global nets on path : 8
+Global nets on path     : 0
+
+Launch Clock Path Delay        :  4.110
++ Clock To Q + Data Path Delay : 21.427
+---------------------------------------
+End-of-path arrival time       : 25.537
+
+Constraint                     : 50.000
++ Capture Clock Path Delay     :  4.110
+- Clock Uncertainty            :  0.120
+---------------------------------------
+End-of-path required time      : 53.990
+
+Launch Clock Path
+                                        name                                          model name   delay (ns)  cumulative delay (ns) pins on net    location
+==============================================================================================================================================================
+io_systemClk                                                                            inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                            inpad        0.200             0.200                2      (160,118)
+io_systemClk                                                                            net          0.320             0.520                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                             gbuf         3.590             4.110                2      (159,118)
+CLKBUF__0|O                                                                             gbuf         0.000             4.110             2525      (159,118)
+io_systemClk~O                                                                          net          0.000             4.110             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|CLK    ff           0.000             4.110             2525      (67,7)   
+
+Data Path
+                                              name                                                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================================================================================
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|Q                    ff          0.282             0.282              12        (67,7)  
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid                         net         2.609             2.891              12        (67,7)  
+   Routing elements:
+      Manhattan distance of X:55, Y:28
+LUT__12789|in[2]                                                                                      lut         0.000             2.891              12        (122,35)
+LUT__12789|out                                                                                        lut         0.000             2.891              34        (122,35)
+n5945                                                                                                 net         1.884             4.775              34        (122,35)
+   Routing elements:
+      Manhattan distance of X:25, Y:2
+LUT__12790|in[2]                                                                                      lut         0.000             4.775              34        (97,37) 
+LUT__12790|out                                                                                        lut         0.000             4.775              37        (97,37) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/n21814                                             net         3.132             7.907              37        (97,37) 
+   Routing elements:
+      Manhattan distance of X:25, Y:43
+LUT__12791|in[3]                                                                                      lut         0.000             7.907              37        (122,80)
+LUT__12791|out                                                                                        lut         0.000             7.907             388        (122,80)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_haltItself                      net         2.899            10.806             388        (122,80)
+   Routing elements:
+      Manhattan distance of X:82, Y:62
+LUT__12802|in[1]                                                                                      lut         0.000            10.806             388        (40,18) 
+LUT__12802|out                                                                                        lut         0.000            10.806               3        (40,18) 
+n5955                                                                                                 net         0.821            11.627               3        (40,18) 
+   Routing elements:
+      Manhattan distance of X:4, Y:0
+LUT__12803|in[3]                                                                                      lut         0.000            11.627               3        (36,18) 
+LUT__12803|out                                                                                        lut         0.000            11.627              50        (36,18) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/decode_arbitration_isStuck                         net         0.560            12.187              50        (36,18) 
+   Routing elements:
+      Manhattan distance of X:0, Y:5
+LUT__13289|in[1]                                                                                      lut         0.000            12.187              50        (36,13) 
+LUT__13289|out                                                                                        lut         0.000            12.187              36        (36,13) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_iBusRsp_stages_2_output_ready     net         3.571            15.758              36        (36,13) 
+   Routing elements:
+      Manhattan distance of X:26, Y:10
+LUT__13669|in[2]                                                                                      lut         0.000            15.758              36        (62,23) 
+LUT__13669|out                                                                                        lut         0.000            15.758              31        (62,23) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/when_Fetcher_l160                                  net         5.494            21.252              31        (62,23) 
+   Routing elements:
+      Manhattan distance of X:17, Y:57
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[16]~FF|CE           ff          0.175            21.427              31        (45,80) 
+
+Capture Clock Path
+                                            name                                              model name   delay (ns)  cumulative delay (ns) pins on net    location
+======================================================================================================================================================================
+io_systemClk                                                                                    inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                                    inpad        0.200             0.200                2      (160,118)
+io_systemClk                                                                                    net          0.320             0.520                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                                     gbuf         3.590             4.110                2      (159,118)
+CLKBUF__0|O                                                                                     gbuf         0.000             4.110             2525      (159,118)
+io_systemClk~O                                                                                  net          0.000             4.110             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[16]~FF|CLK    ff           0.000             4.110             2525      (45,80)  
+
+++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|CLK       
+Path End      : soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[17]~FF|CE
+Launch Clock  : io_systemClk (RISE)                                                                        
+Capture Clock : io_systemClk (RISE)                                                                        
+Slack         : 28.453 (required time - arrival time)                                                      
+Delay         : 20.970                                                                                     
+
+Logic Level             : 7
+Non-global nets on path : 8
+Global nets on path     : 0
+
+Launch Clock Path Delay        :  4.110
++ Clock To Q + Data Path Delay : 21.427
+---------------------------------------
+End-of-path arrival time       : 25.537
+
+Constraint                     : 50.000
++ Capture Clock Path Delay     :  4.110
+- Clock Uncertainty            :  0.120
+---------------------------------------
+End-of-path required time      : 53.990
+
+Launch Clock Path
+                                        name                                          model name   delay (ns)  cumulative delay (ns) pins on net    location
+==============================================================================================================================================================
+io_systemClk                                                                            inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                            inpad        0.200             0.200                2      (160,118)
+io_systemClk                                                                            net          0.320             0.520                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                             gbuf         3.590             4.110                2      (159,118)
+CLKBUF__0|O                                                                             gbuf         0.000             4.110             2525      (159,118)
+io_systemClk~O                                                                          net          0.000             4.110             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|CLK    ff           0.000             4.110             2525      (67,7)   
+
+Data Path
+                                              name                                                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================================================================================
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|Q                    ff          0.282             0.282              12        (67,7)  
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid                         net         2.609             2.891              12        (67,7)  
+   Routing elements:
+      Manhattan distance of X:55, Y:28
+LUT__12789|in[2]                                                                                      lut         0.000             2.891              12        (122,35)
+LUT__12789|out                                                                                        lut         0.000             2.891              34        (122,35)
+n5945                                                                                                 net         1.884             4.775              34        (122,35)
+   Routing elements:
+      Manhattan distance of X:25, Y:2
+LUT__12790|in[2]                                                                                      lut         0.000             4.775              34        (97,37) 
+LUT__12790|out                                                                                        lut         0.000             4.775              37        (97,37) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/n21814                                             net         3.132             7.907              37        (97,37) 
+   Routing elements:
+      Manhattan distance of X:25, Y:43
+LUT__12791|in[3]                                                                                      lut         0.000             7.907              37        (122,80)
+LUT__12791|out                                                                                        lut         0.000             7.907             388        (122,80)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_haltItself                      net         2.899            10.806             388        (122,80)
+   Routing elements:
+      Manhattan distance of X:82, Y:62
+LUT__12802|in[1]                                                                                      lut         0.000            10.806             388        (40,18) 
+LUT__12802|out                                                                                        lut         0.000            10.806               3        (40,18) 
+n5955                                                                                                 net         0.821            11.627               3        (40,18) 
+   Routing elements:
+      Manhattan distance of X:4, Y:0
+LUT__12803|in[3]                                                                                      lut         0.000            11.627               3        (36,18) 
+LUT__12803|out                                                                                        lut         0.000            11.627              50        (36,18) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/decode_arbitration_isStuck                         net         0.560            12.187              50        (36,18) 
+   Routing elements:
+      Manhattan distance of X:0, Y:5
+LUT__13289|in[1]                                                                                      lut         0.000            12.187              50        (36,13) 
+LUT__13289|out                                                                                        lut         0.000            12.187              36        (36,13) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_iBusRsp_stages_2_output_ready     net         3.571            15.758              36        (36,13) 
+   Routing elements:
+      Manhattan distance of X:26, Y:10
+LUT__13669|in[2]                                                                                      lut         0.000            15.758              36        (62,23) 
+LUT__13669|out                                                                                        lut         0.000            15.758              31        (62,23) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/when_Fetcher_l160                                  net         5.494            21.252              31        (62,23) 
+   Routing elements:
+      Manhattan distance of X:17, Y:65
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[17]~FF|CE           ff          0.175            21.427              31        (45,88) 
+
+Capture Clock Path
+                                            name                                              model name   delay (ns)  cumulative delay (ns) pins on net    location
+======================================================================================================================================================================
+io_systemClk                                                                                    inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                                    inpad        0.200             0.200                2      (160,118)
+io_systemClk                                                                                    net          0.320             0.520                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                                     gbuf         3.590             4.110                2      (159,118)
+CLKBUF__0|O                                                                                     gbuf         0.000             4.110             2525      (159,118)
+io_systemClk~O                                                                                  net          0.000             4.110             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[17]~FF|CLK    ff           0.000             4.110             2525      (45,88)  
+
+++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|CLK       
+Path End      : soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[14]~FF|CE
+Launch Clock  : io_systemClk (RISE)                                                                        
+Capture Clock : io_systemClk (RISE)                                                                        
+Slack         : 28.457 (required time - arrival time)                                                      
+Delay         : 20.966                                                                                     
+
+Logic Level             : 7
+Non-global nets on path : 8
+Global nets on path     : 0
+
+Launch Clock Path Delay        :  4.110
++ Clock To Q + Data Path Delay : 21.423
+---------------------------------------
+End-of-path arrival time       : 25.533
+
+Constraint                     : 50.000
++ Capture Clock Path Delay     :  4.110
+- Clock Uncertainty            :  0.120
+---------------------------------------
+End-of-path required time      : 53.990
+
+Launch Clock Path
+                                        name                                          model name   delay (ns)  cumulative delay (ns) pins on net    location
+==============================================================================================================================================================
+io_systemClk                                                                            inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                            inpad        0.200             0.200                2      (160,118)
+io_systemClk                                                                            net          0.320             0.520                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                             gbuf         3.590             4.110                2      (159,118)
+CLKBUF__0|O                                                                             gbuf         0.000             4.110             2525      (159,118)
+io_systemClk~O                                                                          net          0.000             4.110             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|CLK    ff           0.000             4.110             2525      (67,7)   
+
+Data Path
+                                              name                                                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================================================================================
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|Q                    ff          0.282             0.282              12        (67,7)  
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid                         net         2.609             2.891              12        (67,7)  
+   Routing elements:
+      Manhattan distance of X:55, Y:28
+LUT__12789|in[2]                                                                                      lut         0.000             2.891              12        (122,35)
+LUT__12789|out                                                                                        lut         0.000             2.891              34        (122,35)
+n5945                                                                                                 net         1.884             4.775              34        (122,35)
+   Routing elements:
+      Manhattan distance of X:25, Y:2
+LUT__12790|in[2]                                                                                      lut         0.000             4.775              34        (97,37) 
+LUT__12790|out                                                                                        lut         0.000             4.775              37        (97,37) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/n21814                                             net         3.132             7.907              37        (97,37) 
+   Routing elements:
+      Manhattan distance of X:25, Y:43
+LUT__12791|in[3]                                                                                      lut         0.000             7.907              37        (122,80)
+LUT__12791|out                                                                                        lut         0.000             7.907             388        (122,80)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_haltItself                      net         2.899            10.806             388        (122,80)
+   Routing elements:
+      Manhattan distance of X:82, Y:62
+LUT__12802|in[1]                                                                                      lut         0.000            10.806             388        (40,18) 
+LUT__12802|out                                                                                        lut         0.000            10.806               3        (40,18) 
+n5955                                                                                                 net         0.821            11.627               3        (40,18) 
+   Routing elements:
+      Manhattan distance of X:4, Y:0
+LUT__12803|in[3]                                                                                      lut         0.000            11.627               3        (36,18) 
+LUT__12803|out                                                                                        lut         0.000            11.627              50        (36,18) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/decode_arbitration_isStuck                         net         0.560            12.187              50        (36,18) 
+   Routing elements:
+      Manhattan distance of X:0, Y:5
+LUT__13289|in[1]                                                                                      lut         0.000            12.187              50        (36,13) 
+LUT__13289|out                                                                                        lut         0.000            12.187              36        (36,13) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_iBusRsp_stages_2_output_ready     net         3.571            15.758              36        (36,13) 
+   Routing elements:
+      Manhattan distance of X:26, Y:10
+LUT__13669|in[2]                                                                                      lut         0.000            15.758              36        (62,23) 
+LUT__13669|out                                                                                        lut         0.000            15.758              31        (62,23) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/when_Fetcher_l160                                  net         5.490            21.248              31        (62,23) 
+   Routing elements:
+      Manhattan distance of X:17, Y:47
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[14]~FF|CE           ff          0.175            21.423              31        (45,70) 
+
+Capture Clock Path
+                                            name                                              model name   delay (ns)  cumulative delay (ns) pins on net    location
+======================================================================================================================================================================
+io_systemClk                                                                                    inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                                    inpad        0.200             0.200                2      (160,118)
+io_systemClk                                                                                    net          0.320             0.520                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                                     gbuf         3.590             4.110                2      (159,118)
+CLKBUF__0|O                                                                                     gbuf         0.000             4.110             2525      (159,118)
+io_systemClk~O                                                                                  net          0.000             4.110             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[14]~FF|CLK    ff           0.000             4.110             2525      (45,70)  
+
+++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|CLK       
+Path End      : soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[11]~FF|CE
+Launch Clock  : io_systemClk (RISE)                                                                        
+Capture Clock : io_systemClk (RISE)                                                                        
+Slack         : 28.457 (required time - arrival time)                                                      
+Delay         : 20.966                                                                                     
+
+Logic Level             : 7
+Non-global nets on path : 8
+Global nets on path     : 0
+
+Launch Clock Path Delay        :  4.110
++ Clock To Q + Data Path Delay : 21.423
+---------------------------------------
+End-of-path arrival time       : 25.533
+
+Constraint                     : 50.000
++ Capture Clock Path Delay     :  4.110
+- Clock Uncertainty            :  0.120
+---------------------------------------
+End-of-path required time      : 53.990
+
+Launch Clock Path
+                                        name                                          model name   delay (ns)  cumulative delay (ns) pins on net    location
+==============================================================================================================================================================
+io_systemClk                                                                            inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                            inpad        0.200             0.200                2      (160,118)
+io_systemClk                                                                            net          0.320             0.520                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                             gbuf         3.590             4.110                2      (159,118)
+CLKBUF__0|O                                                                             gbuf         0.000             4.110             2525      (159,118)
+io_systemClk~O                                                                          net          0.000             4.110             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|CLK    ff           0.000             4.110             2525      (67,7)   
+
+Data Path
+                                              name                                                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================================================================================
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|Q                    ff          0.282             0.282              12        (67,7)  
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid                         net         2.609             2.891              12        (67,7)  
+   Routing elements:
+      Manhattan distance of X:55, Y:28
+LUT__12789|in[2]                                                                                      lut         0.000             2.891              12        (122,35)
+LUT__12789|out                                                                                        lut         0.000             2.891              34        (122,35)
+n5945                                                                                                 net         1.884             4.775              34        (122,35)
+   Routing elements:
+      Manhattan distance of X:25, Y:2
+LUT__12790|in[2]                                                                                      lut         0.000             4.775              34        (97,37) 
+LUT__12790|out                                                                                        lut         0.000             4.775              37        (97,37) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/n21814                                             net         3.132             7.907              37        (97,37) 
+   Routing elements:
+      Manhattan distance of X:25, Y:43
+LUT__12791|in[3]                                                                                      lut         0.000             7.907              37        (122,80)
+LUT__12791|out                                                                                        lut         0.000             7.907             388        (122,80)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_haltItself                      net         2.899            10.806             388        (122,80)
+   Routing elements:
+      Manhattan distance of X:82, Y:62
+LUT__12802|in[1]                                                                                      lut         0.000            10.806             388        (40,18) 
+LUT__12802|out                                                                                        lut         0.000            10.806               3        (40,18) 
+n5955                                                                                                 net         0.821            11.627               3        (40,18) 
+   Routing elements:
+      Manhattan distance of X:4, Y:0
+LUT__12803|in[3]                                                                                      lut         0.000            11.627               3        (36,18) 
+LUT__12803|out                                                                                        lut         0.000            11.627              50        (36,18) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/decode_arbitration_isStuck                         net         0.560            12.187              50        (36,18) 
+   Routing elements:
+      Manhattan distance of X:0, Y:5
+LUT__13289|in[1]                                                                                      lut         0.000            12.187              50        (36,13) 
+LUT__13289|out                                                                                        lut         0.000            12.187              36        (36,13) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_iBusRsp_stages_2_output_ready     net         3.571            15.758              36        (36,13) 
+   Routing elements:
+      Manhattan distance of X:26, Y:10
+LUT__13669|in[2]                                                                                      lut         0.000            15.758              36        (62,23) 
+LUT__13669|out                                                                                        lut         0.000            15.758              31        (62,23) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/when_Fetcher_l160                                  net         5.490            21.248              31        (62,23) 
+   Routing elements:
+      Manhattan distance of X:17, Y:40
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[11]~FF|CE           ff          0.175            21.423              31        (45,63) 
+
+Capture Clock Path
+                                            name                                              model name   delay (ns)  cumulative delay (ns) pins on net    location
+======================================================================================================================================================================
+io_systemClk                                                                                    inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                                    inpad        0.200             0.200                2      (160,118)
+io_systemClk                                                                                    net          0.320             0.520                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                                     gbuf         3.590             4.110                2      (159,118)
+CLKBUF__0|O                                                                                     gbuf         0.000             4.110             2525      (159,118)
+io_systemClk~O                                                                                  net          0.000             4.110             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[11]~FF|CLK    ff           0.000             4.110             2525      (45,63)  
+
+++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|CLK
+Path End      : soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/CsrPlugin_mepc[13]~FF|CE         
+Launch Clock  : io_systemClk (RISE)                                                                 
+Capture Clock : io_systemClk (RISE)                                                                 
+Slack         : 28.481 (required time - arrival time)                                               
+Delay         : 20.942                                                                              
+
+Logic Level             : 7
+Non-global nets on path : 8
+Global nets on path     : 0
+
+Launch Clock Path Delay        :  4.110
++ Clock To Q + Data Path Delay : 21.399
+---------------------------------------
+End-of-path arrival time       : 25.509
+
+Constraint                     : 50.000
++ Capture Clock Path Delay     :  4.110
+- Clock Uncertainty            :  0.120
+---------------------------------------
+End-of-path required time      : 53.990
+
+Launch Clock Path
+                                        name                                          model name   delay (ns)  cumulative delay (ns) pins on net    location
+==============================================================================================================================================================
+io_systemClk                                                                            inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                            inpad        0.200             0.200                2      (160,118)
+io_systemClk                                                                            net          0.320             0.520                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                             gbuf         3.590             4.110                2      (159,118)
+CLKBUF__0|O                                                                             gbuf         0.000             4.110             2525      (159,118)
+io_systemClk~O                                                                          net          0.000             4.110             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|CLK    ff           0.000             4.110             2525      (67,7)   
+
+Data Path
+                                       name                                         model name   delay (ns)  cumulative delay (ns) pins on net    location
+============================================================================================================================================================
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|Q     ff          0.282             0.282              12        (67,7)  
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid          net         2.609             2.891              12        (67,7)  
+   Routing elements:
+      Manhattan distance of X:55, Y:28
+LUT__12789|in[2]                                                                       lut         0.000             2.891              12        (122,35)
+LUT__12789|out                                                                         lut         0.000             2.891              34        (122,35)
+n5945                                                                                  net         1.884             4.775              34        (122,35)
+   Routing elements:
+      Manhattan distance of X:25, Y:2
+LUT__12790|in[2]                                                                       lut         0.000             4.775              34        (97,37) 
+LUT__12790|out                                                                         lut         0.000             4.775              37        (97,37) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/n21814                              net         3.132             7.907              37        (97,37) 
+   Routing elements:
+      Manhattan distance of X:25, Y:43
+LUT__12791|in[3]                                                                       lut         0.000             7.907              37        (122,80)
+LUT__12791|out                                                                         lut         0.000             7.907             388        (122,80)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_haltItself       net         2.691            10.598             388        (122,80)
+   Routing elements:
+      Manhattan distance of X:78, Y:66
+LUT__13301|in[0]                                                                       lut         0.000            10.598             388        (44,14) 
+LUT__13301|out                                                                         lut         0.000            10.598             237        (44,14) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/execute_arbitration_isStuck         net         1.341            11.939             237        (44,14) 
+   Routing elements:
+      Manhattan distance of X:28, Y:1
+LUT__13302|in[0]                                                                       lut         0.000            11.939             237        (72,13) 
+LUT__13302|out                                                                         lut         0.000            11.939               7        (72,13) 
+n6259                                                                                  net         0.698            12.637               7        (72,13) 
+   Routing elements:
+      Manhattan distance of X:17, Y:0
+LUT__13393|in[0]                                                                       lut         0.000            12.637               7        (89,13) 
+LUT__13393|out                                                                         lut         0.000            12.637              34        (89,13) 
+n6285                                                                                  net         2.229            14.866              34        (89,13) 
+   Routing elements:
+      Manhattan distance of X:25, Y:2
+LUT__13399|in[3]                                                                       lut         0.000            14.866              34        (114,11)
+LUT__13399|out                                                                         lut         0.000            14.866              33        (114,11)
+ceg_net43                                                                              net         6.358            21.224              33        (114,11)
+   Routing elements:
+      Manhattan distance of X:47, Y:47
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/CsrPlugin_mepc[13]~FF|CE            ff          0.175            21.399              33        (67,58) 
+
+Capture Clock Path
+                                    name                                      model name   delay (ns)  cumulative delay (ns) pins on net    location
+======================================================================================================================================================
+io_systemClk                                                                    inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                    inpad        0.200             0.200                2      (160,118)
+io_systemClk                                                                    net          0.320             0.520                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                     gbuf         3.590             4.110                2      (159,118)
+CLKBUF__0|O                                                                     gbuf         0.000             4.110             2525      (159,118)
+io_systemClk~O                                                                  net          0.000             4.110             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/CsrPlugin_mepc[13]~FF|CLK    ff           0.000             4.110             2525      (67,58)  
+
+++++ Path 10 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|CLK       
+Path End      : soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[25]~FF|CE
+Launch Clock  : io_systemClk (RISE)                                                                        
+Capture Clock : io_systemClk (RISE)                                                                        
+Slack         : 28.621 (required time - arrival time)                                                      
+Delay         : 20.802                                                                                     
+
+Logic Level             : 7
+Non-global nets on path : 8
+Global nets on path     : 0
+
+Launch Clock Path Delay        :  4.110
++ Clock To Q + Data Path Delay : 21.259
+---------------------------------------
+End-of-path arrival time       : 25.369
+
+Constraint                     : 50.000
++ Capture Clock Path Delay     :  4.110
+- Clock Uncertainty            :  0.120
+---------------------------------------
+End-of-path required time      : 53.990
+
+Launch Clock Path
+                                        name                                          model name   delay (ns)  cumulative delay (ns) pins on net    location
+==============================================================================================================================================================
+io_systemClk                                                                            inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                            inpad        0.200             0.200                2      (160,118)
+io_systemClk                                                                            net          0.320             0.520                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                             gbuf         3.590             4.110                2      (159,118)
+CLKBUF__0|O                                                                             gbuf         0.000             4.110             2525      (159,118)
+io_systemClk~O                                                                          net          0.000             4.110             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|CLK    ff           0.000             4.110             2525      (67,7)   
+
+Data Path
+                                              name                                                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================================================================================
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid~FF|Q                    ff          0.282             0.282              12        (67,7)  
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_isValid                         net         2.609             2.891              12        (67,7)  
+   Routing elements:
+      Manhattan distance of X:55, Y:28
+LUT__12789|in[2]                                                                                      lut         0.000             2.891              12        (122,35)
+LUT__12789|out                                                                                        lut         0.000             2.891              34        (122,35)
+n5945                                                                                                 net         1.884             4.775              34        (122,35)
+   Routing elements:
+      Manhattan distance of X:25, Y:2
+LUT__12790|in[2]                                                                                      lut         0.000             4.775              34        (97,37) 
+LUT__12790|out                                                                                        lut         0.000             4.775              37        (97,37) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/n21814                                             net         3.132             7.907              37        (97,37) 
+   Routing elements:
+      Manhattan distance of X:25, Y:43
+LUT__12791|in[3]                                                                                      lut         0.000             7.907              37        (122,80)
+LUT__12791|out                                                                                        lut         0.000             7.907             388        (122,80)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/memory_arbitration_haltItself                      net         2.899            10.806             388        (122,80)
+   Routing elements:
+      Manhattan distance of X:82, Y:62
+LUT__12802|in[1]                                                                                      lut         0.000            10.806             388        (40,18) 
+LUT__12802|out                                                                                        lut         0.000            10.806               3        (40,18) 
+n5955                                                                                                 net         0.821            11.627               3        (40,18) 
+   Routing elements:
+      Manhattan distance of X:4, Y:0
+LUT__12803|in[3]                                                                                      lut         0.000            11.627               3        (36,18) 
+LUT__12803|out                                                                                        lut         0.000            11.627              50        (36,18) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/decode_arbitration_isStuck                         net         0.560            12.187              50        (36,18) 
+   Routing elements:
+      Manhattan distance of X:0, Y:5
+LUT__13289|in[1]                                                                                      lut         0.000            12.187              50        (36,13) 
+LUT__13289|out                                                                                        lut         0.000            12.187              36        (36,13) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_iBusRsp_stages_2_output_ready     net         3.571            15.758              36        (36,13) 
+   Routing elements:
+      Manhattan distance of X:26, Y:10
+LUT__13669|in[2]                                                                                      lut         0.000            15.758              36        (62,23) 
+LUT__13669|out                                                                                        lut         0.000            15.758              31        (62,23) 
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/when_Fetcher_l160                                  net         5.326            21.084              31        (62,23) 
+   Routing elements: feedthru(1)
+      Manhattan distance of X:17, Y:82
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[25]~FF|CE           ff          0.175            21.259              31        (45,105)
+
+Capture Clock Path
+                                            name                                              model name   delay (ns)  cumulative delay (ns) pins on net    location
+======================================================================================================================================================================
+io_systemClk                                                                                    inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                                    inpad        0.200             0.200                2      (160,118)
+io_systemClk                                                                                    net          0.320             0.520                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                                     gbuf         3.590             4.110                2      (159,118)
+CLKBUF__0|O                                                                                     gbuf         0.000             4.110             2525      (159,118)
+io_systemClk~O                                                                                  net          0.000             4.110             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/IBusSimplePlugin_fetchPc_pcReg[25]~FF|CLK    ff           0.000             4.110             2525      (45,105) 
+
+---------- Path Details for Max Critical Paths (end) ---------------
+
+---------- 4. Path Details for Min Critical Paths (begin) ----------
+
+################################################################################
+Path Detail Report (io_systemClk vs io_systemClk)
+################################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[7]~FF|CLK                                           
+Path End      : soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy/logic_ram|WDATA[7]
+Launch Clock  : io_systemClk (RISE)                                                                                                             
+Capture Clock : io_systemClk (RISE)                                                                                                             
+Slack         : 0.119 (arrival time - required time)                                                                                            
+Delay         : 0.170                                                                                                                           
+
+Logic Level             : 0
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.055
++ Clock To Q + Data Path Delay : 0.179
+--------------------------------------
+End-of-path arrival time       : 2.234
+
+Constraint                     : 0.000
++ Capture Clock Path Delay     : 2.055
++ Clock Uncertainty            : 0.060
+--------------------------------------
+End-of-path required time      : 2.115
+
+Launch Clock Path
+                                        name                                           model name   delay (ns)  cumulative delay (ns) pins on net    location
+===============================================================================================================================================================
+io_systemClk                                                                             inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                             inpad        0.100             0.100                2      (160,118)
+io_systemClk                                                                             net          0.160             0.260                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                              gbuf         1.795             2.055                2      (159,118)
+CLKBUF__0|O                                                                              gbuf         0.000             2.055             2525      (159,118)
+io_systemClk~O                                                                           net          0.000             2.055             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[7]~FF|CLK    ff           0.000             2.055             2525      (13,29)  
+
+Data Path
+                                                              name                                                                model name   delay (ns)  cumulative delay (ns) pins on net    location
+==========================================================================================================================================================================================================
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[7]~FF|Q                                              ff               0.141            0.141              2         (13,29)
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[7]                                                   net              0.170            0.311              2         (13,29)
+   Routing elements:
+      Manhattan distance of X:2, Y:7
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy/logic_ram|WDATA[7] ram_4096x20     -0.132            0.179              2         (11,22)
+
+Capture Clock Path
+                                                            name                                                              model name   delay (ns)  cumulative delay (ns) pins on net    location
+======================================================================================================================================================================================================
+io_systemClk                                                                                                                 inpad           0.000             0.000                0      (160,118)
+io_systemClk                                                                                                                 inpad           0.100             0.100                2      (160,118)
+io_systemClk                                                                                                                 net             0.160             0.260                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                                                                  gbuf            1.795             2.055                2      (159,118)
+CLKBUF__0|O                                                                                                                  gbuf            0.000             2.055             2525      (159,118)
+io_systemClk~O                                                                                                               net             0.000             2.055             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy/logic_ram|WCLK ram_4096x20     0.000             2.055             2525      (11,22)  
+
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[2]~FF|CLK                                           
+Path End      : soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy/logic_ram|WDATA[2]
+Launch Clock  : io_systemClk (RISE)                                                                                                             
+Capture Clock : io_systemClk (RISE)                                                                                                             
+Slack         : 0.119 (arrival time - required time)                                                                                            
+Delay         : 0.170                                                                                                                           
+
+Logic Level             : 0
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.055
++ Clock To Q + Data Path Delay : 0.179
+--------------------------------------
+End-of-path arrival time       : 2.234
+
+Constraint                     : 0.000
++ Capture Clock Path Delay     : 2.055
++ Clock Uncertainty            : 0.060
+--------------------------------------
+End-of-path required time      : 2.115
+
+Launch Clock Path
+                                        name                                           model name   delay (ns)  cumulative delay (ns) pins on net    location
+===============================================================================================================================================================
+io_systemClk                                                                             inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                             inpad        0.100             0.100                2      (160,118)
+io_systemClk                                                                             net          0.160             0.260                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                              gbuf         1.795             2.055                2      (159,118)
+CLKBUF__0|O                                                                              gbuf         0.000             2.055             2525      (159,118)
+io_systemClk~O                                                                           net          0.000             2.055             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[2]~FF|CLK    ff           0.000             2.055             2525      (13,24)  
+
+Data Path
+                                                              name                                                                model name   delay (ns)  cumulative delay (ns) pins on net    location
+==========================================================================================================================================================================================================
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[2]~FF|Q                                              ff               0.141            0.141              2         (13,24)
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[2]                                                   net              0.170            0.311              2         (13,24)
+   Routing elements:
+      Manhattan distance of X:2, Y:2
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy/logic_ram|WDATA[2] ram_4096x20     -0.132            0.179              2         (11,22)
+
+Capture Clock Path
+                                                            name                                                              model name   delay (ns)  cumulative delay (ns) pins on net    location
+======================================================================================================================================================================================================
+io_systemClk                                                                                                                 inpad           0.000             0.000                0      (160,118)
+io_systemClk                                                                                                                 inpad           0.100             0.100                2      (160,118)
+io_systemClk                                                                                                                 net             0.160             0.260                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                                                                  gbuf            1.795             2.055                2      (159,118)
+CLKBUF__0|O                                                                                                                  gbuf            0.000             2.055             2525      (159,118)
+io_systemClk~O                                                                                                               net             0.000             2.055             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy/logic_ram|WCLK ram_4096x20     0.000             2.055             2525      (11,22)  
+
+++++ Path 3 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[6]~FF|CLK                                           
+Path End      : soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy/logic_ram|WDATA[6]
+Launch Clock  : io_systemClk (RISE)                                                                                                             
+Capture Clock : io_systemClk (RISE)                                                                                                             
+Slack         : 0.119 (arrival time - required time)                                                                                            
+Delay         : 0.170                                                                                                                           
+
+Logic Level             : 0
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.055
++ Clock To Q + Data Path Delay : 0.179
+--------------------------------------
+End-of-path arrival time       : 2.234
+
+Constraint                     : 0.000
++ Capture Clock Path Delay     : 2.055
++ Clock Uncertainty            : 0.060
+--------------------------------------
+End-of-path required time      : 2.115
+
+Launch Clock Path
+                                        name                                           model name   delay (ns)  cumulative delay (ns) pins on net    location
+===============================================================================================================================================================
+io_systemClk                                                                             inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                             inpad        0.100             0.100                2      (160,118)
+io_systemClk                                                                             net          0.160             0.260                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                              gbuf         1.795             2.055                2      (159,118)
+CLKBUF__0|O                                                                              gbuf         0.000             2.055             2525      (159,118)
+io_systemClk~O                                                                           net          0.000             2.055             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[6]~FF|CLK    ff           0.000             2.055             2525      (13,28)  
+
+Data Path
+                                                              name                                                                model name   delay (ns)  cumulative delay (ns) pins on net    location
+==========================================================================================================================================================================================================
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[6]~FF|Q                                              ff               0.141            0.141              2         (13,28)
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[6]                                                   net              0.170            0.311              2         (13,28)
+   Routing elements:
+      Manhattan distance of X:2, Y:6
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy/logic_ram|WDATA[6] ram_4096x20     -0.132            0.179              2         (11,22)
+
+Capture Clock Path
+                                                            name                                                              model name   delay (ns)  cumulative delay (ns) pins on net    location
+======================================================================================================================================================================================================
+io_systemClk                                                                                                                 inpad           0.000             0.000                0      (160,118)
+io_systemClk                                                                                                                 inpad           0.100             0.100                2      (160,118)
+io_systemClk                                                                                                                 net             0.160             0.260                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                                                                  gbuf            1.795             2.055                2      (159,118)
+CLKBUF__0|O                                                                                                                  gbuf            0.000             2.055             2525      (159,118)
+io_systemClk~O                                                                                                               net             0.000             2.055             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy/logic_ram|WCLK ram_4096x20     0.000             2.055             2525      (11,22)  
+
+++++ Path 4 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[4]~FF|CLK                                           
+Path End      : soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy/logic_ram|WDATA[4]
+Launch Clock  : io_systemClk (RISE)                                                                                                             
+Capture Clock : io_systemClk (RISE)                                                                                                             
+Slack         : 0.119 (arrival time - required time)                                                                                            
+Delay         : 0.170                                                                                                                           
+
+Logic Level             : 0
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.055
++ Clock To Q + Data Path Delay : 0.179
+--------------------------------------
+End-of-path arrival time       : 2.234
+
+Constraint                     : 0.000
++ Capture Clock Path Delay     : 2.055
++ Clock Uncertainty            : 0.060
+--------------------------------------
+End-of-path required time      : 2.115
+
+Launch Clock Path
+                                        name                                           model name   delay (ns)  cumulative delay (ns) pins on net    location
+===============================================================================================================================================================
+io_systemClk                                                                             inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                             inpad        0.100             0.100                2      (160,118)
+io_systemClk                                                                             net          0.160             0.260                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                              gbuf         1.795             2.055                2      (159,118)
+CLKBUF__0|O                                                                              gbuf         0.000             2.055             2525      (159,118)
+io_systemClk~O                                                                           net          0.000             2.055             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[4]~FF|CLK    ff           0.000             2.055             2525      (13,26)  
+
+Data Path
+                                                              name                                                                model name   delay (ns)  cumulative delay (ns) pins on net    location
+==========================================================================================================================================================================================================
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[4]~FF|Q                                              ff               0.141            0.141              2         (13,26)
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[4]                                                   net              0.170            0.311              2         (13,26)
+   Routing elements:
+      Manhattan distance of X:2, Y:4
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy/logic_ram|WDATA[4] ram_4096x20     -0.132            0.179              2         (11,22)
+
+Capture Clock Path
+                                                            name                                                              model name   delay (ns)  cumulative delay (ns) pins on net    location
+======================================================================================================================================================================================================
+io_systemClk                                                                                                                 inpad           0.000             0.000                0      (160,118)
+io_systemClk                                                                                                                 inpad           0.100             0.100                2      (160,118)
+io_systemClk                                                                                                                 net             0.160             0.260                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                                                                  gbuf            1.795             2.055                2      (159,118)
+CLKBUF__0|O                                                                                                                  gbuf            0.000             2.055             2525      (159,118)
+io_systemClk~O                                                                                                               net             0.000             2.055             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy/logic_ram|WCLK ram_4096x20     0.000             2.055             2525      (11,22)  
+
+++++ Path 5 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[1]~FF|CLK                                           
+Path End      : soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy/logic_ram|WDATA[1]
+Launch Clock  : io_systemClk (RISE)                                                                                                             
+Capture Clock : io_systemClk (RISE)                                                                                                             
+Slack         : 0.119 (arrival time - required time)                                                                                            
+Delay         : 0.170                                                                                                                           
+
+Logic Level             : 0
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.055
++ Clock To Q + Data Path Delay : 0.179
+--------------------------------------
+End-of-path arrival time       : 2.234
+
+Constraint                     : 0.000
++ Capture Clock Path Delay     : 2.055
++ Clock Uncertainty            : 0.060
+--------------------------------------
+End-of-path required time      : 2.115
+
+Launch Clock Path
+                                        name                                           model name   delay (ns)  cumulative delay (ns) pins on net    location
+===============================================================================================================================================================
+io_systemClk                                                                             inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                             inpad        0.100             0.100                2      (160,118)
+io_systemClk                                                                             net          0.160             0.260                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                              gbuf         1.795             2.055                2      (159,118)
+CLKBUF__0|O                                                                              gbuf         0.000             2.055             2525      (159,118)
+io_systemClk~O                                                                           net          0.000             2.055             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[1]~FF|CLK    ff           0.000             2.055             2525      (9,23)   
+
+Data Path
+                                                              name                                                                model name   delay (ns)  cumulative delay (ns) pins on net    location
+==========================================================================================================================================================================================================
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[1]~FF|Q                                              ff               0.141            0.141              2         (9,23) 
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[1]                                                   net              0.170            0.311              2         (9,23) 
+   Routing elements:
+      Manhattan distance of X:2, Y:1
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy/logic_ram|WDATA[1] ram_4096x20     -0.132            0.179              2         (11,22)
+
+Capture Clock Path
+                                                            name                                                              model name   delay (ns)  cumulative delay (ns) pins on net    location
+======================================================================================================================================================================================================
+io_systemClk                                                                                                                 inpad           0.000             0.000                0      (160,118)
+io_systemClk                                                                                                                 inpad           0.100             0.100                2      (160,118)
+io_systemClk                                                                                                                 net             0.160             0.260                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                                                                  gbuf            1.795             2.055                2      (159,118)
+CLKBUF__0|O                                                                                                                  gbuf            0.000             2.055             2525      (159,118)
+io_systemClk~O                                                                                                               net             0.000             2.055             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy/logic_ram|WCLK ram_4096x20     0.000             2.055             2525      (11,22)  
+
+++++ Path 6 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[0]~FF|CLK                                           
+Path End      : soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy/logic_ram|WDATA[0]
+Launch Clock  : io_systemClk (RISE)                                                                                                             
+Capture Clock : io_systemClk (RISE)                                                                                                             
+Slack         : 0.119 (arrival time - required time)                                                                                            
+Delay         : 0.170                                                                                                                           
+
+Logic Level             : 0
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.055
++ Clock To Q + Data Path Delay : 0.179
+--------------------------------------
+End-of-path arrival time       : 2.234
+
+Constraint                     : 0.000
++ Capture Clock Path Delay     : 2.055
++ Clock Uncertainty            : 0.060
+--------------------------------------
+End-of-path required time      : 2.115
+
+Launch Clock Path
+                                        name                                           model name   delay (ns)  cumulative delay (ns) pins on net    location
+===============================================================================================================================================================
+io_systemClk                                                                             inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                             inpad        0.100             0.100                2      (160,118)
+io_systemClk                                                                             net          0.160             0.260                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                              gbuf         1.795             2.055                2      (159,118)
+CLKBUF__0|O                                                                              gbuf         0.000             2.055             2525      (159,118)
+io_systemClk~O                                                                           net          0.000             2.055             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[0]~FF|CLK    ff           0.000             2.055             2525      (9,22)   
+
+Data Path
+                                                              name                                                                model name   delay (ns)  cumulative delay (ns) pins on net    location
+==========================================================================================================================================================================================================
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[0]~FF|Q                                              ff               0.141            0.141              2         (9,22) 
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[0]                                                   net              0.170            0.311              2         (9,22) 
+   Routing elements:
+      Manhattan distance of X:2, Y:0
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy/logic_ram|WDATA[0] ram_4096x20     -0.132            0.179              2         (11,22)
+
+Capture Clock Path
+                                                            name                                                              model name   delay (ns)  cumulative delay (ns) pins on net    location
+======================================================================================================================================================================================================
+io_systemClk                                                                                                                 inpad           0.000             0.000                0      (160,118)
+io_systemClk                                                                                                                 inpad           0.100             0.100                2      (160,118)
+io_systemClk                                                                                                                 net             0.160             0.260                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                                                                  gbuf            1.795             2.055                2      (159,118)
+CLKBUF__0|O                                                                                                                  gbuf            0.000             2.055             2525      (159,118)
+io_systemClk~O                                                                                                               net             0.000             2.055             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy/logic_ram|WCLK ram_4096x20     0.000             2.055             2525      (11,22)  
+
+++++ Path 7 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[5]~FF|CLK                                           
+Path End      : soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy/logic_ram|WDATA[5]
+Launch Clock  : io_systemClk (RISE)                                                                                                             
+Capture Clock : io_systemClk (RISE)                                                                                                             
+Slack         : 0.119 (arrival time - required time)                                                                                            
+Delay         : 0.170                                                                                                                           
+
+Logic Level             : 0
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.055
++ Clock To Q + Data Path Delay : 0.179
+--------------------------------------
+End-of-path arrival time       : 2.234
+
+Constraint                     : 0.000
++ Capture Clock Path Delay     : 2.055
++ Clock Uncertainty            : 0.060
+--------------------------------------
+End-of-path required time      : 2.115
+
+Launch Clock Path
+                                        name                                           model name   delay (ns)  cumulative delay (ns) pins on net    location
+===============================================================================================================================================================
+io_systemClk                                                                             inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                             inpad        0.100             0.100                2      (160,118)
+io_systemClk                                                                             net          0.160             0.260                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                              gbuf         1.795             2.055                2      (159,118)
+CLKBUF__0|O                                                                              gbuf         0.000             2.055             2525      (159,118)
+io_systemClk~O                                                                           net          0.000             2.055             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[5]~FF|CLK    ff           0.000             2.055             2525      (13,27)  
+
+Data Path
+                                                              name                                                                model name   delay (ns)  cumulative delay (ns) pins on net    location
+==========================================================================================================================================================================================================
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[5]~FF|Q                                              ff               0.141            0.141              2         (13,27)
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/uartCtrl_1_io_read_payload[5]                                                   net              0.170            0.311              2         (13,27)
+   Routing elements:
+      Manhattan distance of X:2, Y:5
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy/logic_ram|WDATA[5] ram_4096x20     -0.132            0.179              2         (11,22)
+
+Capture Clock Path
+                                                            name                                                              model name   delay (ns)  cumulative delay (ns) pins on net    location
+======================================================================================================================================================================================================
+io_systemClk                                                                                                                 inpad           0.000             0.000                0      (160,118)
+io_systemClk                                                                                                                 inpad           0.100             0.100                2      (160,118)
+io_systemClk                                                                                                                 net             0.160             0.260                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                                                                  gbuf            1.795             2.055                2      (159,118)
+CLKBUF__0|O                                                                                                                  gbuf            0.000             2.055             2525      (159,118)
+io_systemClk~O                                                                                                               net             0.000             2.055             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy/logic_ram|WCLK ram_4096x20     0.000             2.055             2525      (11,22)  
+
+++++ Path 8 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/bridge_write_streamUnbuffered_queueWithOccupancy/logic_pushPtr_value[1]~FF|CLK
+Path End      : soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/bridge_write_streamUnbuffered_queueWithOccupancy/logic_ram|WADDR[0]           
+Launch Clock  : io_systemClk (RISE)                                                                                                            
+Capture Clock : io_systemClk (RISE)                                                                                                            
+Slack         : 0.305 (arrival time - required time)                                                                                           
+Delay         : 0.389                                                                                                                          
+
+Logic Level             : 0
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.055
++ Clock To Q + Data Path Delay : 0.365
+--------------------------------------
+End-of-path arrival time       : 2.420
+
+Constraint                     : 0.000
++ Capture Clock Path Delay     : 2.055
++ Clock Uncertainty            : 0.060
+--------------------------------------
+End-of-path required time      : 2.115
+
+Launch Clock Path
+                                                             name                                                                model name   delay (ns)  cumulative delay (ns) pins on net    location
+=========================================================================================================================================================================================================
+io_systemClk                                                                                                                       inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                                                                       inpad        0.100             0.100                2      (160,118)
+io_systemClk                                                                                                                       net          0.160             0.260                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                                                                        gbuf         1.795             2.055                2      (159,118)
+CLKBUF__0|O                                                                                                                        gbuf         0.000             2.055             2525      (159,118)
+io_systemClk~O                                                                                                                     net          0.000             2.055             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/bridge_write_streamUnbuffered_queueWithOccupancy/logic_pushPtr_value[1]~FF|CLK    ff           0.000             2.055             2525      (15,70)  
+
+Data Path
+                                                            name                                                               model name   delay (ns)  cumulative delay (ns) pins on net    location
+=======================================================================================================================================================================================================
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/bridge_write_streamUnbuffered_queueWithOccupancy/logic_pushPtr_value[1]~FF|Q ff               0.141            0.141              6         (15,70)
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/bridge_write_streamUnbuffered_queueWithOccupancy/logic_pushPtr_value[1]      net              0.389            0.530              6         (15,70)
+   Routing elements:
+      Manhattan distance of X:4, Y:8
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/bridge_write_streamUnbuffered_queueWithOccupancy/logic_ram|WADDR[0]          ram_4096x20     -0.165            0.365              6         (11,62)
+
+Capture Clock Path
+                                                      name                                                        model name   delay (ns)  cumulative delay (ns) pins on net    location
+==========================================================================================================================================================================================
+io_systemClk                                                                                                     inpad           0.000             0.000                0      (160,118)
+io_systemClk                                                                                                     inpad           0.100             0.100                2      (160,118)
+io_systemClk                                                                                                     net             0.160             0.260                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                                                      gbuf            1.795             2.055                2      (159,118)
+CLKBUF__0|O                                                                                                      gbuf            0.000             2.055             2525      (159,118)
+io_systemClk~O                                                                                                   net             0.000             2.055             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_uart_0_io_logic/bridge_write_streamUnbuffered_queueWithOccupancy/logic_ram|WCLK ram_4096x20     0.000             2.055             2525      (11,62)  
+
+++++ Path 9 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/CsrPlugin_exceptionPortCtrl_exceptionContext_code[1]~FF|CLK
+Path End      : soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/CsrPlugin_mcause_exceptionCode[1]~FF|D                     
+Launch Clock  : io_systemClk (RISE)                                                                                           
+Capture Clock : io_systemClk (RISE)                                                                                           
+Slack         : 0.306 (arrival time - required time)                                                                          
+Delay         : 0.225                                                                                                         
+
+Logic Level             : 1
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.055
++ Clock To Q + Data Path Delay : 0.366
+--------------------------------------
+End-of-path arrival time       : 2.421
+
+Constraint                     : 0.000
++ Capture Clock Path Delay     : 2.055
++ Clock Uncertainty            : 0.060
+--------------------------------------
+End-of-path required time      : 2.115
+
+Launch Clock Path
+                                                     name                                                       model name   delay (ns)  cumulative delay (ns) pins on net    location
+========================================================================================================================================================================================
+io_systemClk                                                                                                      inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                                                      inpad        0.100             0.100                2      (160,118)
+io_systemClk                                                                                                      net          0.160             0.260                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                                                       gbuf         1.795             2.055                2      (159,118)
+CLKBUF__0|O                                                                                                       gbuf         0.000             2.055             2525      (159,118)
+io_systemClk~O                                                                                                    net          0.000             2.055             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/CsrPlugin_exceptionPortCtrl_exceptionContext_code[1]~FF|CLK    ff           0.000             2.055             2525      (109,3)  
+
+Data Path
+                                                    name                                                      model name   delay (ns)  cumulative delay (ns) pins on net    location
+======================================================================================================================================================================================
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/CsrPlugin_exceptionPortCtrl_exceptionContext_code[1]~FF|Q     ff          0.141             0.141              2         (109,3)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/CsrPlugin_exceptionPortCtrl_exceptionContext_code[1]          net         0.225             0.366              2         (109,3)
+   Routing elements:
+      Manhattan distance of X:0, Y:1
+LUT__13961|in[3]                                                                                                 lut         0.000             0.366              2         (109,2)
+LUT__13961|out                                                                                                   lut         0.000             0.366              2         (109,2)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/CsrPlugin_mcause_exceptionCode[1]~FF|D                        ff          0.000             0.366              2         (109,2)
+
+Capture Clock Path
+                                           name                                              model name   delay (ns)  cumulative delay (ns) pins on net    location
+=====================================================================================================================================================================
+io_systemClk                                                                                   inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                                   inpad        0.100             0.100                2      (160,118)
+io_systemClk                                                                                   net          0.160             0.260                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                                    gbuf         1.795             2.055                2      (159,118)
+CLKBUF__0|O                                                                                    gbuf         0.000             2.055             2525      (159,118)
+io_systemClk~O                                                                                 net          0.000             2.055             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_cores_0_logic_cpu/CsrPlugin_mcause_exceptionCode[1]~FF|CLK    ff           0.000             2.055             2525      (109,2)  
+
+++++ Path 10 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : soc_inst/u_EfxSapphireSoc/system_hardJtag_debug_logic_debugger/dispatcher_headerShifter[7]~FF|CLK
+Path End      : soc_inst/u_EfxSapphireSoc/system_hardJtag_debug_logic_debugger/dispatcher_headerShifter[6]~FF|D  
+Launch Clock  : io_systemClk (RISE)                                                                              
+Capture Clock : io_systemClk (RISE)                                                                              
+Slack         : 0.306 (arrival time - required time)                                                             
+Delay         : 0.225                                                                                            
+
+Logic Level             : 0
+Non-global nets on path : 1
+Global nets on path     : 0
+
+Launch Clock Path Delay        : 2.055
++ Clock To Q + Data Path Delay : 0.366
+--------------------------------------
+End-of-path arrival time       : 2.421
+
+Constraint                     : 0.000
++ Capture Clock Path Delay     : 2.055
++ Clock Uncertainty            : 0.060
+--------------------------------------
+End-of-path required time      : 2.115
+
+Launch Clock Path
+                                              name                                                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================================================================================
+io_systemClk                                                                                         inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                                         inpad        0.100             0.100                2      (160,118)
+io_systemClk                                                                                         net          0.160             0.260                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                                          gbuf         1.795             2.055                2      (159,118)
+CLKBUF__0|O                                                                                          gbuf         0.000             2.055             2525      (159,118)
+io_systemClk~O                                                                                       net          0.000             2.055             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_hardJtag_debug_logic_debugger/dispatcher_headerShifter[7]~FF|CLK    ff           0.000             2.055             2525      (25,3)   
+
+Data Path
+                                             name                                                model name   delay (ns)  cumulative delay (ns) pins on net    location
+=========================================================================================================================================================================
+soc_inst/u_EfxSapphireSoc/system_hardJtag_debug_logic_debugger/dispatcher_headerShifter[7]~FF|Q     ff          0.141             0.141              3          (25,3)
+soc_inst/u_EfxSapphireSoc/system_hardJtag_debug_logic_debugger/dispatcher_headerShifter[7]          net         0.225             0.366              3          (25,3)
+   Routing elements:
+      Manhattan distance of X:0, Y:1
+soc_inst/u_EfxSapphireSoc/system_hardJtag_debug_logic_debugger/dispatcher_headerShifter[6]~FF|D     ff          0.000             0.366              3          (25,2)
+
+Capture Clock Path
+                                              name                                                 model name   delay (ns)  cumulative delay (ns) pins on net    location
+===========================================================================================================================================================================
+io_systemClk                                                                                         inpad        0.000             0.000                0      (160,118)
+io_systemClk                                                                                         inpad        0.100             0.100                2      (160,118)
+io_systemClk                                                                                         net          0.160             0.260                2      (160,118)
+   Routing elements:
+      Manhattan distance of X:1, Y:0
+CLKBUF__0|I                                                                                          gbuf         1.795             2.055                2      (159,118)
+CLKBUF__0|O                                                                                          gbuf         0.000             2.055             2525      (159,118)
+io_systemClk~O                                                                                       net          0.000             2.055             2525      (159,118)
+soc_inst/u_EfxSapphireSoc/system_hardJtag_debug_logic_debugger/dispatcher_headerShifter[6]~FF|CLK    ff           0.000             2.055             2525      (25,2)   
+
+---------- Path Details for Min Critical Paths (end) ---------------
+

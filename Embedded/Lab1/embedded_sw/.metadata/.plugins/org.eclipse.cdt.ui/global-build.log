@@ -1,0 +1,15 @@
+15:09:51 **** Clean-only build of configuration Default for project uartEchoDemo ****
+make clean 
+15:10:36 **** Build of configuration Default for project uartEchoDemo ****
+make all 
+CC src/main.c
+CC ../common/start.S
+LD uartEchoDemo
+Memory region         Used Size  Region Size  %age Used
+             ram:        2080 B         4 KB     50.78%
+15:13:01 **** Incremental Build of configuration Default for project uartEchoDemo ****
+make all 
+make: Nothing to be done for 'all'.
+15:23:08 **** Incremental Build of configuration Default for project uartEchoDemo ****
+make all 
+make: Nothing to be done for 'all'.

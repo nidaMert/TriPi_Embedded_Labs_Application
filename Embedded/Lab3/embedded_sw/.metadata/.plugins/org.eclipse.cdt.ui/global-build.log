@@ -1,0 +1,85 @@
+19:45:18 **** Clean-only build of configuration Default for project apb3Demo ****
+make clean 
+rm: can't remove 'build/apb3Demo.elf': Permission denied
+make: *** [../common/standalone.mk:60: clean] Error 1
+"make clean" terminated with exit code 2. Build might be incomplete.
+19:46:25 **** Build of configuration Default for project apb3Demo ****
+make all 
+19:46:52 **** Incremental Build of configuration Default for project apb3Demo ****
+make all 
+make: Nothing to be done for 'all'.
+19:48:03 **** Incremental Build of configuration Default for project apb3Demo ****
+make all 
+make: Nothing to be done for 'all'.
+19:48:39 **** Incremental Build of configuration Default for project apb3Demo ****
+make all 
+CC src/main.c
+CC ../common/start.S
+LD apb3Demo
+Memory region         Used Size  Region Size  %age Used
+             ram:          2 KB         4 KB     50.00%
+19:48:51 **** Incremental Build of configuration Default for project apb3Demo ****
+make all 
+make: Nothing to be done for 'all'.
+19:52:48 **** Incremental Build of configuration Default for project apb3Demo ****
+make all 
+CC src/main.c
+src/main.c: In function 'main':
+src/main.c:133:6: warning: implicit declaration of function 'delay' [-Wimplicit-function-declaration]
+      delay(1000);  // Her LED'in 1 saniye yanmasını sağla
+      ^~~~~
+LD apb3Demo
+Memory region         Used Size  Region Size  %age Used
+c:/efinity/efinity-riscv-ide-2024.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld.exe: build/obj_files/main.o: in function `cfg_write':
+C:\Efinity\Embedded\Lab3\embedded_sw\soc\software\standalone\apb3Demo/../driver/apb3_cl.h:126: undefined reference to `delay'
+             ram:        2000 B         4 KB     48.83%
+collect2.exe: error: ld returned 1 exit status
+make: *** [../common/standalone.mk:31: build/apb3Demo.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:54:45 **** Incremental Build of configuration Default for project apb3Demo ****
+make all 
+CC src/main.c
+LD apb3Demo
+c:/efinity/efinity-riscv-ide-2024.1/toolchain/bin/../lib/gcc/riscv-none-embed/8.3.0/../../../../riscv-none-embed/bin/ld.exe: build/obj_files/main.o: in function `write_u32':
+C:\Efinity\Embedded\Lab3\embedded_sw\soc\software\standalone\apb3Demo/../driver/io.h:82: undefined reference to `usleep'
+Memory region         Used Size  Region Size  %age Used
+collect2.exe: error: ld returned 1 exit status
+             ram:        2000 B         4 KB     48.83%
+make: *** [../common/standalone.mk:31: build/apb3Demo.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:55:27 **** Incremental Build of configuration Default for project apb3Demo ****
+make all 
+CC src/main.c
+LD apb3Demo
+Memory region         Used Size  Region Size  %age Used
+             ram:        1968 B         4 KB     48.05%
+19:55:31 **** Incremental Build of configuration Default for project apb3Demo ****
+make all 
+make: Nothing to be done for 'all'.
+19:56:14 **** Incremental Build of configuration Default for project apb3Demo ****
+make all 
+CC src/main.c
+LD apb3Demo
+Memory region         Used Size  Region Size  %age Used
+             ram:          2 KB         4 KB     50.00%
+19:56:19 **** Incremental Build of configuration Default for project apb3Demo ****
+make all 
+make: Nothing to be done for 'all'.
+20:14:37 **** Incremental Build of configuration Default for project apb3Demo ****
+make all 
+CC src/main.c
+LD apb3Demo
+Memory region         Used Size  Region Size  %age Used
+             ram:          2 KB         4 KB     50.00%
+20:14:40 **** Incremental Build of configuration Default for project apb3Demo ****
+make all 
+make: Nothing to be done for 'all'.
+20:20:47 **** Incremental Build of configuration Default for project apb3Demo ****
+make all 
+CC src/main.c
+LD apb3Demo
+Memory region         Used Size  Region Size  %age Used
+             ram:          2 KB         4 KB     50.00%
+20:20:54 **** Incremental Build of configuration Default for project apb3Demo ****
+make all 
+make: Nothing to be done for 'all'.

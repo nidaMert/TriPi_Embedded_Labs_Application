@@ -1,0 +1,93 @@
+{
+    "debug_cores": [
+        {
+            "name": "la0",
+            "type": "la",
+            "uuid": "b67aef1b6f1844cbada17f443b5f6125",
+            "probes": [
+                {
+                    "name": "ain",
+                    "width": 4,
+                    "probe_type": 1
+                },
+                {
+                    "name": "bin",
+                    "width": 4,
+                    "probe_type": 1
+                },
+                {
+                    "name": "ain_vio",
+                    "width": 4,
+                    "probe_type": 1
+                },
+                {
+                    "name": "bin_vio",
+                    "width": 4,
+                    "probe_type": 1
+                },
+                {
+                    "name": "result",
+                    "width": 4,
+                    "probe_type": 1
+                },
+                {
+                    "name": "select",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "axi_awvalid",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "axi_awready",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "axi_wready",
+                    "width": 1,
+                    "probe_type": 1
+                },
+                {
+                    "name": "axi_wvalid",
+                    "width": 1,
+                    "probe_type": 1
+                }
+            ],
+            "data_depth": 1024,
+            "trigin_en": false,
+            "trigout_en": false,
+            "capture_control": false,
+            "input_pipeline": 1,
+            "auto_inserted": false
+        },
+        {
+            "name": "vio0",
+            "type": "vio",
+            "uuid": "8306aa0106a146588166b12a0e0e5431",
+            "probes": [
+                {
+                    "name": "ain_vio",
+                    "width": 4,
+                    "init": "0x0"
+                },
+                {
+                    "name": "bin_vio",
+                    "width": 4,
+                    "init": "0x0"
+                },
+                {
+                    "name": "select",
+                    "width": 1,
+                    "init": "0x0"
+                }
+            ]
+        }
+    ],
+    "session": {
+        "debug_widget": [],
+        "wizard": {}
+    }
+}

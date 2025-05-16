@@ -1,0 +1,330 @@
+
+Efinity Interface Designer Report
+Version: 2024.1.163
+Date: 2025-04-05 23:12
+
+Copyright (C) 2013 - 2024 Efinix Inc. All rights reserved.
+
+Device: T20Q144
+Project: Lab5
+
+Package: 144-pin QFP (final)
+Timing Model: C4 (final)
+Configuration Mode: active (x1)
+
+---------- Table of Contents (begin) ----------
+   1. Periphery Usage Summary
+   2. Generated Output Files
+   3. I/O Banks Summary
+   4. Global Connection Summary
+   5. Clock Region Usage Summary
+   6. Dual-Function Configuration Pin Usage
+   7. GPIO Usage Summary
+   8. PLL Usage Summary
+   9. LVDS Rx Usage Summary
+   10. LVDS Tx Usage Summary
+   11. Clock Mux Usage Summary
+   12. Configuration Control Usage Summary
+   13. JTAG Usage Summary
+---------- Table of Contents (end) ------------
+
+---------- 1. Periphery Usage Summary (begin) ----------
+clkmux: 2 / 2 (100.0%)
+control: 0 / 1 (0.0%)
+gpio: 11 / 71 (15.49%)
+jtag: 2 / 2 (100.0%)
+lvds_bg: 0 / 1 (0.0%)
+lvds_rx: 0 / 7 (0.0%)
+lvds_tx: 0 / 6 (0.0%)
+pll: 1 / 5 (20.0%)
+---------- Periphery Usage Summary (end) ----------
+
+---------- 2. Generated Output Files (begin) ----------
+Interface Configuration: Lab5.interface.csv
+Peripheral Block Configuration: Lab5.lpf
+Pinout Report: Lab5.pinout.rpt
+Pinout CSV: Lab5.pinout.csv
+Timing Report: Lab5.pt_timing.rpt
+Timing SDC Template: Lab5.pt.sdc
+Verilog Template: Lab5_template.v
+Option Register File: Lab5_or.ini
+---------- Generated Output Files (end) ----------
+
+---------- 3. I/O Banks Summary (begin) ----------
+
++----------+-------------+
+| I/O Bank | I/O Voltage |
++----------+-------------+
+|    1A    |    3.3 V    |
+|    1B    |    3.3 V    |
+|  1C_1D   |    3.3 V    |
+|    1E    |    3.3 V    |
+|    3A    |    3.3 V    |
+|  3B_3C   |    3.3 V    |
+|    3D    |    3.3 V    |
+|    3E    |    3.3 V    |
+|    4A    |    3.3 V    |
+|    4B    |    3.3 V    |
+|    BR    |    1.2 V    |
+|    TL    |    1.2 V    |
+|    TR    |    1.2 V    |
++----------+-------------+
+
+---------- I/O Banks Summary (end) ----------
+
+---------- 4. Global Connection Summary (begin) ----------
+
++--------------+-----------------+------+
+|   Pin Name   |     Resource    | Type |
++--------------+-----------------+------+
+| io_systemClk | PLL_BR0.CLKOUT0 | GCLK |
++--------------+-----------------+------+
+
+---------- Global Connection Summary (end) ----------
+
+---------- 5. Clock Region Usage Summary (begin) ----------
+
++--------------+----------------+
+| Clock Region | Used/Available |
++--------------+----------------+
+|      B       |      0/16      |
+|      L0      |      1/4       |
+|      L1      |      0/4       |
+|      L2      |      0/4       |
+|      R0      |      0/4       |
+|      R1      |      0/4       |
+|      R2      |      0/4       |
+|      T       |      0/16      |
++--------------+----------------+
+
+---------- Clock Region Usage Summary (end) ----------
+
+---------- 6. Dual-Function Configuration Pin Usage (begin) ----------
+
++----------------------------+----------+
+|       Instance Name        | Function |
++----------------------------+----------+
+|          leds[0]           | NSTATUS  |
+|          leds[1]           |  TEST_N  |
+|          leds[2]           |  CBUS1   |
+|          leds[3]           |  CBUS2   |
+|   system_spi_0_io_data_0   |   CDI0   |
+|   system_spi_0_io_data_1   |   CDI1   |
+| system_spi_0_io_sclk_write |   CCK    |
+|     system_spi_0_io_ss     |   SS_N   |
+|    system_uart_0_io_rxd    |  CDI12   |
+|    system_uart_0_io_txd    |  CDI13   |
++----------------------------+----------+
+
+---------- Dual-Function Configuration Pin Usage (end) ----------
+
+---------- 7. GPIO Usage Summary (begin) ----------
+
+Global Unused Setting: input with weak pullup
+
++----------------------------+-----------+--------+-----------------+--------------+----------+----------------------+------------------+-------------+
+|       Instance Name        |  Resource |  Mode  |     Register    | Clock Region | I/O Bank |     I/O Standard     |     Pad Name     | Package Pin |
++----------------------------+-----------+--------+-----------------+--------------+----------+----------------------+------------------+-------------+
+|          leds[0]           |  GPIOL_71 | output |                 |              |    1E    | 3.3 V LVTTL / LVCMOS | GPIOL_71_NSTATUS |     136     |
+|          leds[1]           | GPIOR_158 | output |                 |              |    3E    | 3.3 V LVTTL / LVCMOS | GPIOR_158_TEST_N |      74     |
+|          leds[2]           | GPIOR_150 | output |                 |              |    3E    | 3.3 V LVTTL / LVCMOS | GPIOR_150_CBUS1  |      79     |
+|          leds[3]           | GPIOR_149 | output |                 |              |    3E    | 3.3 V LVTTL / LVCMOS | GPIOR_149_CBUS2  |      80     |
+|       my_pll_refclk        | GPIOR_157 | input  |                 |              |    3E    | 3.3 V LVTTL / LVCMOS | GPIOR_157_PLLIN  |      75     |
+|   system_spi_0_io_data_0   |  GPIOL_08 | inout  | I(R),O(R),OE(R) |      L0      |    1A    | 3.3 V LVTTL / LVCMOS |  GPIOL_08_CDI0   |      29     |
+|   system_spi_0_io_data_1   |  GPIOL_09 | inout  | I(R),O(R),OE(R) |      L0      |    1A    | 3.3 V LVTTL / LVCMOS |  GPIOL_09_CDI1   |      28     |
+| system_spi_0_io_sclk_write |  GPIOL_01 | output |       O(R)      |      L0      |    1A    | 3.3 V LVTTL / LVCMOS |   GPIOL_01_CCK   |      30     |
+|     system_spi_0_io_ss     |  GPIOL_00 | output |       O(R)      |      L0      |    1A    | 3.3 V LVTTL / LVCMOS |  GPIOL_00_SS_N   |      31     |
+|    system_uart_0_io_rxd    |  GPIOL_66 | input  |                 |              |    1E    | 3.3 V LVTTL / LVCMOS |  GPIOL_66_CDI12  |     142     |
+|    system_uart_0_io_txd    |  GPIOL_67 | output |                 |              |    1E    | 3.3 V LVTTL / LVCMOS |  GPIOL_67_CDI13  |     140     |
++----------------------------+-----------+--------+-----------------+--------------+----------+----------------------+------------------+-------------+
+
+*NOTE
+R: Register Path
+
+
+Input GPIO Configuration:
+=========================
+
++----------------------+----------------------+---------------------+-----------------+--------------+-----------------+------+
+|    Instance Name     |      Input Pin       | Alternate Input Pin | Input Clock Pin | Pull Up/Down | Schmitt Trigger | DDIO |
++----------------------+----------------------+---------------------+-----------------+--------------+-----------------+------+
+|    my_pll_refclk     |                      |    my_pll_refclk    |                 | weak pullup  |     Disable     | none |
+| system_uart_0_io_rxd | system_uart_0_io_rxd |                     |                 | weak pullup  |     Disable     |      |
++----------------------+----------------------+---------------------+-----------------+--------------+-----------------+------+
+
+Output GPIO Configuration:
+==========================
+
++----------------------------+----------------------------+------------------+----------------+-----------+------+
+|       Instance Name        |         Output Pin         | Output Clock Pin | Drive Strength | Slew Rate | DDIO |
++----------------------------+----------------------------+------------------+----------------+-----------+------+
+|          leds[0]           |          leds[0]           |                  |       1        |  Disable  |      |
+|          leds[1]           |          leds[1]           |                  |       1        |  Disable  | none |
+|          leds[2]           |          leds[2]           |                  |       1        |  Disable  | none |
+|          leds[3]           |          leds[3]           |                  |       1        |  Disable  | none |
+| system_spi_0_io_sclk_write | system_spi_0_io_sclk_write |   io_systemClk   |       1        |  Disable  |      |
+|     system_spi_0_io_ss     |     system_spi_0_io_ss     |   io_systemClk   |       1        |  Disable  |      |
+|    system_uart_0_io_txd    |    system_uart_0_io_txd    |                  |       1        |  Disable  |      |
++----------------------------+----------------------------+------------------+----------------+-----------+------+
+
+Inout GPIO Configuration:
+=========================
+
++------------------------+-----------------------------+---------------------+-----------------+--------------+-----------------+------------+------------------------------+------------------------------------+------------------+----------------+-----------+-------------+
+|     Instance Name      |          Input Pin          | Alternate Input Pin | Input Clock Pin | Pull Up/Down | Schmitt Trigger | Input DDIO |          Output Pin          |               OE Pin               | Output Clock Pin | Drive Strength | Slew Rate | Output DDIO |
++------------------------+-----------------------------+---------------------+-----------------+--------------+-----------------+------------+------------------------------+------------------------------------+------------------+----------------+-----------+-------------+
+| system_spi_0_io_data_0 | system_spi_0_io_data_0_read |                     |   io_systemClk  |     none     |     Disable     |            | system_spi_0_io_data_0_write | system_spi_0_io_data_0_writeEnable |   io_systemClk   |       1        |  Disable  |             |
+| system_spi_0_io_data_1 | system_spi_0_io_data_1_read |                     |   io_systemClk  |     none     |     Disable     |            | system_spi_0_io_data_1_write | system_spi_0_io_data_1_writeEnable |   io_systemClk   |       1        |  Disable  |             |
++------------------------+-----------------------------+---------------------+-----------------+--------------+-----------------+------------+------------------------------+------------------------------------+------------------+----------------+-----------+-------------+
+
+---------- GPIO Usage Summary (end) ----------
+
+---------- 8. PLL Usage Summary (begin) ----------
+
++---------------+----------+--------------+--------------+-----------------+---------------+----------------+--------------+---------+---------+
+| Instance Name | Resource | Clock Region | Clock Source | Reference Clock | Feedback Mode | Feedback Clock |   Clkout0    | Clkout1 | Clkout2 |
++---------------+----------+--------------+--------------+-----------------+---------------+----------------+--------------+---------+---------+
+|     my_pll    | PLL_BR0  |              |   external   |  my_pll_refclk  |    internal   |                | io_systemClk |         |         |
++---------------+----------+--------------+--------------+-----------------+---------------+----------------+--------------+---------+---------+
+
+Instance Name                 : my_pll
+Resource                      : PLL_BR0
+Reset Pin Name                : my_pll_rstn
+Locked Pin Name               : io_asyncResetn
+Clock Source                  : external
+Reference Clock Resource      : GPIOR_157
+Reference Clock               : my_pll_refclk
+Feedback Mode                 : internal
+
+Reference Clock Frequency     : 50.0000 MHz
+Reference Clock Period        : 20.0000 ns
+Multiplier (M)                : 32
+Pre-Divider (N)               : 1
+VCO Frequency                 : 1600.0000 MHz
+Post-Divider (O)              : 2
+PLL Frequency                 : 800.0000 MHz
+
+Output Clock 0
+Clock Pin Name                : io_systemClk
+Output Divider                : 40
+Output Phase Shift            : 0
+Output Frequency              : 20.0000 MHz
+Output Period                 : 50.0000 ns
+
+Frequency calculations:
+	VCO = REFCLK * (M/N)
+	    = 50.0000 MHz * (32/1)
+	    = 1600.0000 MHz
+	PLL = VCO / O
+	    = 1600.0000 MHz / 2
+	    = 800.0000 MHz
+
+	CLKOUT0 = PLL / CLKOUT0_DIV
+	        = 800.0000 MHz / 40
+	        = 20.0000 MHz
+
+SDC Constraints:
+	create_clock -period 50.0000 io_systemClk
+
+---------- PLL Usage Summary (end) ----------
+
+---------- 9. LVDS Rx Usage Summary (begin) ----------
+
+No LVDS Rx was configured
+
+---------- LVDS Rx Usage Summary (end) ----------
+
+---------- 10. LVDS Tx Usage Summary (begin) ----------
+
+No LVDS Tx was configured
+
+---------- LVDS Tx Usage Summary (end) ----------
+
+---------- 11. Clock Mux Usage Summary (begin) ----------
+
++----------+-----------------+
+| Resource | Output Assigned |
++----------+-----------------+
+| CLKMUX_R |        1        |
++----------+-----------------+
+
+Resource: CLKMUX_R
+
+Clock mux assignment:
+
++-----------------+--------------+----------+--------------+---------+---------+---------+---------+---------+---------+---------+
+|  Input Resource |  Clock Pin   |  Status  |   RCLK[0]    | RCLK[1] | RCLK[2] | RCLK[3] | RCLK[4] | RCLK[5] | RCLK[6] | RCLK[7] |
++-----------------+--------------+----------+--------------+---------+---------+---------+---------+---------+---------+---------+
+|                 |              | Selected | io_systemClk |         |         |         |         |         |         |         |
+|   GPIOR_127.IN  |              |          |      -       |         |         |         |    O    |         |         |         |
+|   GPIOR_126.IN  |              |          |              |    O    |         |         |         |    O    |         |         |
+|   GPIOR_125.IN  |              |          |              |         |    O    |         |         |         |    O    |         |
+|   GPIOR_124.IN  |              |          |              |         |         |    O    |         |         |         |    O    |
+|   GPIOR_123.IN  |              |          |      -       |         |         |         |    O    |         |         |         |
+|   GPIOR_122.IN  |              |          |              |    O    |         |         |         |    O    |         |         |
+|   GPIOR_121.IN  |              |          |              |         |    O    |         |         |         |    O    |         |
+|   GPIOR_120.IN  |              |          |              |         |         |    O    |         |         |         |    O    |
+| PLL_TR0.CLKOUT0 |              |          |      -       |         |         |         |         |         |    O    |         |
+| PLL_TR0.CLKOUT1 |              |          |              |    O    |    O    |         |         |         |         |         |
+| PLL_TR0.CLKOUT2 |              |          |              |    O    |    O    |         |         |         |         |         |
+| PLL_TR1.CLKOUT0 |              |          |              |         |         |    O    |         |         |         |    O    |
+| PLL_TR1.CLKOUT1 |              |          |              |         |         |         |    O    |    O    |         |         |
+| PLL_TR1.CLKOUT2 |              |          |              |         |         |         |    O    |    O    |         |         |
+| PLL_BR0.CLKOUT0 | io_systemClk |  Routed  |      ^       |         |         |         |         |         |         |    O    |
+| PLL_BR0.CLKOUT1 |              |          |              |    O    |    O    |         |         |         |         |         |
+| PLL_BR0.CLKOUT2 |              |          |              |    O    |    O    |         |         |         |         |         |
++-----------------+--------------+----------+--------------+---------+---------+---------+---------+---------+---------+---------+
+
+*NOTE
+ : No connection from input to mux output
+O: Available input to mux output connection
+^: Input assigned to mux output
+-: Unavailable (used) input to mux output connection
+
+---------- Clock Mux Usage Summary (end) ----------
+
+---------- 12. Configuration Control Usage Summary (begin) ----------
+
+No Configuration Control was configured
+
+---------- Configuration Control Usage Summary (end) ----------
+
+---------- 13. JTAG Usage Summary (begin) ----------
+
+***** JTAG 0 *****
+
+Instance Name                                     : jtag_inst1
+
+Resource                                          : JTAG_USER1
+
+Capture Pin Name                                  : jtag_inst1_CAPTURE
+Gated Test Clock Pin Name                         : jtag_inst1_DRCK
+Reset Pin Name                                    : jtag_inst1_RESET
+Run Test Pin Name                                 : jtag_inst1_RUNTEST
+User Instruction Active Pin Name                  : jtag_inst1_SEL
+Shift Pin Name                                    : jtag_inst1_SHIFT
+Test Clock Pin Name                               : jtag_inst1_TCK
+Test Data Pin Name                                : jtag_inst1_TDI
+Test Data Pin Name                                : jtag_inst1_TDO
+Test Mode Select Pin Name                         : jtag_inst1_TMS
+Update Pin Name                                   : jtag_inst1_UPDATE
+
+***** JTAG 1 *****
+
+Instance Name                                     : jtag_inst2
+
+Resource                                          : JTAG_USER2
+
+Capture Pin Name                                  : jtag_inst2_CAPTURE
+Gated Test Clock Pin Name                         : jtag_inst2_DRCK
+Reset Pin Name                                    : jtag_inst2_RESET
+Run Test Pin Name                                 : jtag_inst2_RUNTEST
+User Instruction Active Pin Name                  : jtag_inst2_SEL
+Shift Pin Name                                    : jtag_inst2_SHIFT
+Test Clock Pin Name                               : jtag_inst2_TCK
+Test Data Pin Name                                : jtag_inst2_TDI
+Test Data Pin Name                                : jtag_inst2_TDO
+Test Mode Select Pin Name                         : jtag_inst2_TMS
+Update Pin Name                                   : jtag_inst2_UPDATE
+
+---------- JTAG Usage Summary (end) ----------

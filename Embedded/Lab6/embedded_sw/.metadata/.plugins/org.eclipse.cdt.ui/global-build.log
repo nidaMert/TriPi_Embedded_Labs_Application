@@ -1,0 +1,40 @@
+22:07:28 **** Clean-only build of configuration Default for project axi4Demo ****
+make clean 
+22:07:31 **** Build of configuration Default for project axi4Demo ****
+make all 
+CC src/main.c
+src/main.c: In function 'main':
+src/main.c:228:3: error: expected declaration or statement at end of input
+   write_u32 (status,SYSTEM_AXI_A_BMB +   MY_LED_IP_S00_AXI_SLV_REG1_OFFSET);  }
+   ^~~~~~~~~
+make: *** [../common/standalone.mk:56: build/obj_files/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:08:41 **** Incremental Build of configuration Default for project axi4Demo ****
+make all 
+CC src/main.c
+CC ../common/start.S
+CC ../common/trap.S
+LD axi4Demo
+Memory region         Used Size  Region Size  %age Used
+             ram:        2560 B         4 KB     62.50%
+22:10:08 **** Incremental Build of configuration Default for project axi4Demo ****
+make all 
+make: Nothing to be done for 'all'.
+22:31:49 **** Incremental Build of configuration Default for project axi4Demo ****
+make all 
+CC src/main.c
+LD axi4Demo
+Memory region         Used Size  Region Size  %age Used
+             ram:        2560 B         4 KB     62.50%
+22:31:57 **** Incremental Build of configuration Default for project axi4Demo ****
+make all 
+make: Nothing to be done for 'all'.
+22:32:37 **** Incremental Build of configuration Default for project axi4Demo ****
+make all 
+CC src/main.c
+LD axi4Demo
+Memory region         Used Size  Region Size  %age Used
+             ram:        2544 B         4 KB     62.11%
+22:32:40 **** Incremental Build of configuration Default for project axi4Demo ****
+make all 
+make: Nothing to be done for 'all'.

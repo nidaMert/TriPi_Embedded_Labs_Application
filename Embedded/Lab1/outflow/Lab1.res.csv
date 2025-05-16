@@ -1,0 +1,38 @@
+sep=\t
+Module Resource Usage Distribution Estimates
+Generated at: Apr 04, 2025 14:56:43
+
+Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module	         FFs	        ADDs	        LUTs	      RAMs	 DSP/MULTs
+top_soc:top_soc                                             	    2525(0)	     584(0)	    3014(1)	    16(0)	     4(0)	
+ +soc_inst:soc                                              	    2525(0)	     584(0)	    3013(0)	    16(0)	     4(0)	
+  +u_EfxSapphireSoc:EfxSapphireSoc_0590a2205227485e88e735c2d5bb0f8f	  2525(443)	    584(16)	  3013(235)	    16(0)	     4(0)	
+   +bufferCC_6:BufferCC_0590a2205227485e88e735c2d5bb0f8f    	       2(2)	       0(0)	       0(0)	     0(0)	     0(0)	
+   +bufferCC_7:BufferCC_1_0590a2205227485e88e735c2d5bb0f8f  	       2(2)	       0(0)	       0(0)	     0(0)	     0(0)	
+   +system_cores_0_logic_cpu:VexRiscv_0590a2205227485e88e735c2d5bb0f8f	 1312(1245)	   335(335)	 1955(1913)	     4(4)	     4(4)	
+    +IBusSimplePlugin_rspJoin_rspBuffer_c:StreamFifoLowLatency_0590a2205227485e88e735c2d5bb0f8f	     67(67)	       0(0)	     42(42)	     0(0)	     0(0)	
+   +system_hardJtag_debug_logic_jtagBridge:JtagBridgeNoTap_0590a2205227485e88e735c2d5bb0f8f	     83(74)	       0(0)	     47(45)	     0(0)	     0(0)	
+    +flowCCByToggle_1:FlowCCByToggle_0590a2205227485e88e735c2d5bb0f8f	       9(7)	       0(0)	       2(2)	     0(0)	     0(0)	
+     +inputArea_target_buffercc:BufferCC_4_0590a2205227485e88e735c2d5bb0f8f	       2(2)	       0(0)	       0(0)	     0(0)	     0(0)	
+   +system_hardJtag_debug_logic_debugger:SystemDebugger_0590a2205227485e88e735c2d5bb0f8f	     78(78)	       0(0)	     25(25)	     0(0)	     0(0)	
+   +bufferCC_8:BufferCC_3_0590a2205227485e88e735c2d5bb0f8f  	       2(2)	       0(0)	       0(0)	     0(0)	     0(0)	
+   +system_bridge_bmb_arbiter:BmbArbiter_0590a2205227485e88e735c2d5bb0f8f	       3(0)	       0(0)	      71(0)	     0(0)	     0(0)	
+    +memory_arbiter:StreamArbiter_0590a2205227485e88e735c2d5bb0f8f	       3(3)	       0(0)	     71(71)	     0(0)	     0(0)	
+   +system_bridge_bmb_decoder:BmbDecoder_1_0590a2205227485e88e735c2d5bb0f8f	     12(12)	     15(15)	     60(60)	     0(0)	     0(0)	
+   +bmbDecoder_4:BmbDecoder_2_0590a2205227485e88e735c2d5bb0f8f	       9(9)	     15(15)	     11(11)	     0(0)	     0(0)	
+   +system_ramA_logic:BmbOnChipRam_0590a2205227485e88e735c2d5bb0f8f	       3(3)	       0(0)	       2(2)	     8(8)	     0(0)	
+   +system_bmbPeripheral_bmb_decoder:BmbDecoder_3_0590a2205227485e88e735c2d5bb0f8f	     76(76)	       0(0)	   101(101)	     0(0)	     0(0)	
+   +system_clint_logic:BmbClint_0590a2205227485e88e735c2d5bb0f8f	   166(166)	     63(63)	   143(143)	     0(0)	     0(0)	
+   +system_uart_0_io_logic:BmbUartCtrl_0590a2205227485e88e735c2d5bb0f8f	    162(64)	      79(8)	    181(43)	     2(0)	     0(0)	
+    +uartCtrl_1:UartCtrl_0590a2205227485e88e735c2d5bb0f8f   	     66(21)	     27(21)	    111(31)	     0(0)	     0(0)	
+     +tx:UartCtrlTx_0590a2205227485e88e735c2d5bb0f8f        	     11(11)	       0(0)	     30(30)	     0(0)	     0(0)	
+     +rx:UartCtrlRx_0590a2205227485e88e735c2d5bb0f8f        	     34(32)	       6(6)	     50(50)	     0(0)	     0(0)	
+      +io_rxd_buffercc:BufferCC_5_0590a2205227485e88e735c2d5bb0f8f	       2(2)	       0(0)	       0(0)	     0(0)	     0(0)	
+    +bridge_write_streamUnbuffered_queueWithOccupancy:StreamFifo_2_0590a2205227485e88e735c2d5bb0f8f	     16(16)	     22(22)	     12(12)	     1(1)	     0(0)	
+    +system_uart_0_io_logic_uartCtrl_1_io_read_queueWithOccupancy:StreamFifo_2_0590a2205227485e88e735c2d5bb0f8f	     16(16)	     22(22)	     15(15)	     1(1)	     0(0)	
+   +system_spi_0_io_logic:BmbSpiXdrMasterCtrl_0590a2205227485e88e735c2d5bb0f8f	   171(103)	      61(0)	    181(80)	     2(0)	     0(0)	
+    +ctrl:TopLevel_0590a2205227485e88e735c2d5bb0f8f         	     32(32)	     11(11)	     72(72)	     0(0)	     0(0)	
+    +mapping_cmdLogic_streamUnbuffered_queueWithAvailability:StreamFifo_0590a2205227485e88e735c2d5bb0f8f	     18(18)	     25(25)	     13(13)	     1(1)	     0(0)	
+    +system_spi_0_io_logic_ctrl_io_rsp_queueWithOccupancy:StreamFifo_1_0590a2205227485e88e735c2d5bb0f8f	     18(18)	     25(25)	     16(16)	     1(1)	     0(0)	
+   +io_apbSlave_0_logic:BmbToApb3Bridge_0590a2205227485e88e735c2d5bb0f8f	       1(1)	       0(0)	       1(1)	     0(0)	     0(0)	

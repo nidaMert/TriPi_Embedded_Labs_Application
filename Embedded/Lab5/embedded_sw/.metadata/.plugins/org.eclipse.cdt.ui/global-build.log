@@ -1,0 +1,26 @@
+21:49:52 **** Build of configuration Default for project axi4Demo ****
+make all 
+CC src/main.c
+CC ../common/start.S
+CC ../common/trap.S
+LD axi4Demo
+Memory region         Used Size  Region Size  %age Used
+             ram:        2720 B         4 KB     66.41%
+21:50:53 **** Incremental Build of configuration Default for project axi4Demo ****
+make all 
+make: Nothing to be done for 'all'.
+21:51:05 **** Incremental Build of configuration Default for project axi4Demo ****
+make all 
+make: Nothing to be done for 'all'.
+21:51:40 **** Incremental Build of configuration Default for project axi4Demo ****
+make all 
+make: Nothing to be done for 'all'.
+21:53:12 **** Incremental Build of configuration Default for project axi4Demo ****
+make all 
+make: Nothing to be done for 'all'.
+21:53:51 **** Incremental Build of configuration Default for project axi4Demo ****
+make all 
+CC src/main.c
+LD axi4Demo
+Memory region         Used Size  Region Size  %age Used
+             ram:        2720 B         4 KB     66.41%

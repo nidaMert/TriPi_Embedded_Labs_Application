@@ -1,0 +1,113 @@
+!SESSION 2025-04-04 21:46:24.947 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2025-04-04 21:46:34.949
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-04-04 21:47:10.662
+!MESSAGE Indexed 'axi4Demo' (1 sources, 45 headers) in 0.482 sec: 1,492 declarations; 2,064 references; 0 unresolved inclusions; 5 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2025-04-04 21:51:06.158
+!MESSAGE C:\Efinity\efinity-riscv-ide-2024.1\Efinity-RISCV-IDE\/../openocd/bin/openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {C:\Efinity\Embedded\Lab5\embedded_sw\soc} -f C:\Efinity\Embedded\Lab5\embedded_sw\soc/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f C:\Efinity\Embedded\Lab5\embedded_sw\soc/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2025-04-04 21:51:07.066
+!MESSAGE C:\Efinity\efinity-riscv-ide-2024.1\Efinity-RISCV-IDE\/../toolchain/bin/riscv-none-embed-gdb.exe --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2025-04-04 21:51:40.881
+!MESSAGE C:\Efinity\efinity-riscv-ide-2024.1\Efinity-RISCV-IDE\/../openocd/bin/openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {C:\Efinity\Embedded\Lab5\embedded_sw\soc} -f C:\Efinity\Embedded\Lab5\embedded_sw\soc/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f C:\Efinity\Embedded\Lab5\embedded_sw\soc/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2025-04-04 21:51:41.779
+!MESSAGE C:\Efinity\efinity-riscv-ide-2024.1\Efinity-RISCV-IDE\/../toolchain/bin/riscv-none-embed-gdb.exe --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2025-04-04 21:53:12.636
+!MESSAGE C:\Efinity\efinity-riscv-ide-2024.1\Efinity-RISCV-IDE\/../openocd/bin/openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {C:\Efinity\Embedded\Lab5\embedded_sw\soc} -f C:\Efinity\Embedded\Lab5\embedded_sw\soc/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f C:\Efinity\Embedded\Lab5\embedded_sw\soc/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2025-04-04 21:53:13.529
+!MESSAGE C:\Efinity\efinity-riscv-ide-2024.1\Efinity-RISCV-IDE\/../toolchain/bin/riscv-none-embed-gdb.exe --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2025-04-04 21:53:52.332
+!MESSAGE C:\Efinity\efinity-riscv-ide-2024.1\Efinity-RISCV-IDE\/../openocd/bin/openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {C:\Efinity\Embedded\Lab5\embedded_sw\soc} -f C:\Efinity\Embedded\Lab5\embedded_sw\soc/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f C:\Efinity\Embedded\Lab5\embedded_sw\soc/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2025-04-04 21:53:53.227
+!MESSAGE C:\Efinity\efinity-riscv-ide-2024.1\Efinity-RISCV-IDE\/../toolchain/bin/riscv-none-embed-gdb.exe --interpreter=mi2 --nx
+!SESSION 2025-04-05 23:27:11.851 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2025-04-05 23:27:43.415
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.cdt.core 1 0 2025-04-05 23:29:12.694
+!MESSAGE Indexed 'axi4Demo' (1 sources, 0 headers) in 0.042 sec: 17 declarations; 41 references; 4 unresolved inclusions; 0 syntax errors; 26 unresolved names (31%)
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2025-04-05 23:31:34.103
+!MESSAGE C:\Efinity\efinity-riscv-ide-2024.1\Efinity-RISCV-IDE\/../openocd/bin/openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {C:\Efinity\Embedded\Lab7\embedded_sw\soc} -f C:\Efinity\Embedded\Lab7\embedded_sw\soc/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f C:\Efinity\Embedded\Lab7\embedded_sw\soc/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2025-04-05 23:31:35.027
+!MESSAGE C:\Efinity\efinity-riscv-ide-2024.1\Efinity-RISCV-IDE\/../toolchain/bin/riscv-none-embed-gdb.exe --interpreter=mi2 --nx
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2025-04-05 23:35:20.086
+!MESSAGE C:\Efinity\efinity-riscv-ide-2024.1\Efinity-RISCV-IDE\/../openocd/bin/openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {C:\Efinity\Embedded\Lab7\embedded_sw\soc} -f C:\Efinity\Embedded\Lab7\embedded_sw\soc/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f C:\Efinity\Embedded\Lab7\embedded_sw\soc/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2025-04-05 23:35:36.104
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.RequestMonitorWithProgress@c54c677): Status ERROR: org.eclipse.embedcdt.debug.gdbjtag.core code=5010 Starting OpenOCD timed out.' resulted in an error.
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2025-04-05 23:35:36.104
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.core.jobs 4 2 2025-04-05 23:35:36.112
+!MESSAGE An internal error occurred during: "Starting OpenOCD".
+!STACK 0
+java.lang.IllegalStateException: RequestMonitor: Sequence "", result for executing step #1 = Status ERROR: org.eclipse.cdt.dsf code=10005 Request for monitor: 'RequestMonitor (org.eclipse.embedcdt.debug.gdbjtag.core.dsf.GnuMcuGdbServerBackend$GdbServerStep$1@157eebf1): Status OK: unknown code=0 OK' resulted in a rejected execution exception., done() method called more than once
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.done(RequestMonitor.java:288)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleRejectedExecutionException(RequestMonitor.java:529)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.done(RequestMonitor.java:326)
+	at org.eclipse.embedcdt.debug.gdbjtag.core.dsf.GnuMcuGdbServerBackend$GdbServerStep$2.run(GnuMcuGdbServerBackend.java:735)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2025-04-05 23:35:36.113
+!MESSAGE Error in services launch sequence
+!STACK 1
+org.eclipse.core.runtime.CoreException: Starting OpenOCD timed out.
+	at org.eclipse.cdt.dsf.concurrent.Sequence.abortExecution(Sequence.java:599)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleErrorOrWarning(Sequence.java:448)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleFailure(RequestMonitor.java:433)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:393)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 org.eclipse.embedcdt.debug.gdbjtag.core 4 5010 2025-04-05 23:35:36.114
+!MESSAGE Starting OpenOCD timed out.
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2025-04-05 23:35:48.939
+!MESSAGE C:\Efinity\efinity-riscv-ide-2024.1\Efinity-RISCV-IDE\/../openocd/bin/openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {C:\Efinity\Embedded\Lab7\embedded_sw\soc} -f C:\Efinity\Embedded\Lab7\embedded_sw\soc/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f C:\Efinity\Embedded\Lab7\embedded_sw\soc/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2025-04-05 23:35:49.827
+!MESSAGE C:\Efinity\efinity-riscv-ide-2024.1\Efinity-RISCV-IDE\/../toolchain/bin/riscv-none-embed-gdb.exe --interpreter=mi2 --nx
+!SESSION 2025-04-11 17:23:26.346 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=18.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.ui 4 4 2025-04-11 17:23:48.581
+!MESSAGE MenuAdditionCacheEntry.mergeIntoModel: Invalid menu URI: com.ashling.riscfree.efinix.newproject.wizard.CreateNewEfinixProject
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.openocd.core 4 1 2025-04-11 17:24:01.088
+!MESSAGE C:\Efinity\efinity-riscv-ide-2024.1\Efinity-RISCV-IDE\/../openocd/bin/openocd.exe -c gdb_port 3333 -c telnet_port 4444 -c tcl_port 6666 -c set bsp_loc {C:\Efinity\Embedded\Lab7\embedded_sw\soc} -f C:\Efinity\Embedded\Lab7\embedded_sw\soc/bsp/efinix/EfxSapphireSoc/openocd/ftdi.cfg -f C:\Efinity\Embedded\Lab7\embedded_sw\soc/bsp/efinix/EfxSapphireSoc/openocd/debug.cfg -c echo "Started by GNU MCU Eclipse"
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 0 2025-04-11 17:24:01.520
+!MESSAGE OpenOCD failed with code (1).
+
+For more details, see the openocd.exe console.
